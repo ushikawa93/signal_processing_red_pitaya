@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "system_dds_compiler_0_0",
-    "cell_name": "DAC/dds_compiler_0",
+    "cell_name": "data_source/DAC/dds_compiler_0",
     "component_reference": "xilinx.com:ip:dds_compiler:6.0",
     "ip_revision": "22",
     "gen_directory": "../../../../../../signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_dds_compiler_0_0",

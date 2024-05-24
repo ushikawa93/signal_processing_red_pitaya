@@ -2,10 +2,10 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "system_axis_red_pitaya_adc_0_0",
-    "cell_name": "ADC/axis_red_pitaya_adc_0",
+    "cell_name": "data_source/ADC/axis_red_pitaya_adc_0",
     "component_reference": "pavel-demin:user:axis_red_pitaya_adc:1.0",
     "ip_revision": "1",
-    "gen_directory": "../../../../../../signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_axis_red_pitaya_adc_0_0",
+    "gen_directory": ".",
     "parameters": {
       "component_parameters": {
         "ADC_DATA_WIDTH": [ { "value": "14", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -34,8 +34,9 @@
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
         "IPREVISION": [ { "value": "1" } ],
+        "LOCKEDBYUSER": [ { "value": "TRUE" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_axis_red_pitaya_adc_0_0" } ],
+        "OUTPUTDIR": [ { "value": "." } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2022.2" } ],

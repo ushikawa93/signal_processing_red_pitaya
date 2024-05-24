@@ -2,178 +2,116 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu May 23 18:44:41 2024
-# Process ID: 6852
-# Current directory: C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3444 C:\Users\mati9\Documents\ProyectosRedPitaya\signal_processing_red_pitaya\signal_processing_red_pitaya.xpr
-# Log file: C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/vivado.log
-# Journal file: C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya\vivado.jou
-# Running On: DESKTOP-TN92N90, OS: Windows, CPU Frequency: 3014 MHz, CPU Physical cores: 2, Host memory: 8588 MB
+# Start of session at: Thu May 23 21:19:40 2024
+# Process ID: 12164
+# Current directory: C:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11752 C:\Users\mati9\OneDrive\Documentos\signal_processing_red_pitaya\signal_processing_red_pitaya.xpr
+# Log file: C:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/vivado.log
+# Journal file: C:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya\vivado.jou
+# Running On: DESKTOP-4F847D8, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 2, Host memory: 4204 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.xpr
-update_ip_catalog -rebuild -repo_path c:/Users/mati9/Documents/02-lockin_red_pitaya/hardware/lockin.srcs/user_ip
-launch_runs synth_1 -jobs 2
-add_files {C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/promedio_lineal.v C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/pow2.v C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/promedio_coherente.v C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_writer.v C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/data_stream.v C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/coherent_average.v C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/signal_split.v C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_test.v C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_mux_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_writer_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/signal_decoder.v C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/frequency_counter.v}
-launch_runs synth_1 -jobs 2
-open_bd_design {C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/bd/system/system.bd}
-add_files {C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/trigger_simulator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/bram_switch_v1_0/src/bram_switch.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/delay_axi_streaming.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/filtro_ma.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/coherent_average.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_split.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/system_wrapper.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/multiplicate_ref_2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/promedio_coherente.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/level_detector.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/GCL.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/bd/system/system.bd C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axi_bram_reader_v1_0/src/axi_bram_reader.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_test.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_processing_LI.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/linear_mean.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/lockin_segmentado.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axis_averager_v1_0/src/axis_averager.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axi_bram_reader_v1_0/src/bram_reader_v1_0_S00_AXI.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/promedio_lineal.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/drive_leds.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_writer.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/and_2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axis_red_pitaya_adc_v1_0/src/axis_red_pitaya_adc.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/frequency_counter.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/LFSR.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axis_red_pitaya_dac_v1_0/src/axis_red_pitaya_dac.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_mux_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/start_signal_generator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axis_constant_v1_0/src/axis_constant.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/data_stream.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/drive_gpios.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/referencias.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_writer_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/buffer_circular.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/mult_32bits.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/mux.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/pow2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/clk_adapter.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/decimator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/multiplicador.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/sumador_ripple_carry.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axi_cfg_register_v1_0/src/axi_cfg_register.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/data_source.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_decoder.v}
-export_ip_user_files -of_objects  [get_files  C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/bd/system/system.bd] -lib_map_path [list {modelsim=C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.cache/compile_simlib/modelsim} {questa=C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.cache/compile_simlib/questa} {riviera=C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.cache/compile_simlib/riviera} {activehdl=C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.cache/compile_simlib/activehdl}] -force -quiet
-add_files {C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/trigger_simulator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/bram_switch_v1_0/src/bram_switch.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/delay_axi_streaming.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/filtro_ma.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/coherent_average.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_split.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/multiplicate_ref_2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/promedio_coherente.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/level_detector.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/GCL.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axi_bram_reader_v1_0/src/axi_bram_reader.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_test.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_processing_LI.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/linear_mean.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/lockin_segmentado.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axis_averager_v1_0/src/axis_averager.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axi_bram_reader_v1_0/src/bram_reader_v1_0_S00_AXI.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/promedio_lineal.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/drive_leds.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_writer.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/and_2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axis_red_pitaya_adc_v1_0/src/axis_red_pitaya_adc.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/frequency_counter.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/LFSR.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axis_red_pitaya_dac_v1_0/src/axis_red_pitaya_dac.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_mux_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/start_signal_generator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axis_constant_v1_0/src/axis_constant.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/data_stream.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/drive_gpios.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/referencias.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_writer_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/buffer_circular.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/mult_32bits.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/mux.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/pow2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/clk_adapter.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/decimator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/multiplicador.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/sumador_ripple_carry.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/cores/axi_cfg_register_v1_0/src/axi_cfg_register.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/data_source.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_decoder.v}
-add_files {C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/trigger_simulator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/delay_axi_streaming.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/filtro_ma.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/coherent_average.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_split.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/multiplicate_ref_2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/promedio_coherente.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/level_detector.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/GCL.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_test.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_processing_LI.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/linear_mean.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/lockin_segmentado.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/promedio_lineal.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/drive_leds.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_writer.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/and_2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/frequency_counter.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/LFSR.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_mux_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/start_signal_generator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/data_stream.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/drive_gpios.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/referencias.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_writer_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/buffer_circular.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/mult_32bits.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/mux.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/pow2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/clk_adapter.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/decimator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/multiplicador.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/sumador_ripple_carry.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/data_source.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_decoder.v}
-launch_runs synth_1 -jobs 2
-open_bd_design {C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/bd/system/system.bd}
-add_files -norecurse {C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/trigger_simulator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/delay_axi_streaming.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/filtro_ma.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/coherent_average.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_split.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/multiplicate_ref_2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/promedio_coherente.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/level_detector.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/GCL.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_test.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_processing_LI.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/linear_mean.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/lockin_segmentado.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/promedio_lineal.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/drive_leds.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_writer.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/and_2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/LFSR.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/frequency_counter.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_mux_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/start_signal_generator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/data_stream.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/drive_gpios.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/referencias.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_writer_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/buffer_circular.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/mult_32bits.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/mux.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/pow2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/clk_adapter.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/decimator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/multiplicador.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/sumador_ripple_carry.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/data_source.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_decoder.v}
-add_files -norecurse {C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/lu_tables/x2048_16b.mem C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/lu_tables/x2048_14b.mem C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/lu_tables/y2048_16b.mem}
-launch_runs synth_1 -jobs 2
-add_files -norecurse -scan_for_includes {C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_decoder.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/data_source.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/sumador_ripple_carry.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/multiplicador.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/decimator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/clk_adapter.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/pow2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/mux.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/mult_32bits.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/buffer_circular.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_writer_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/referencias.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/drive_gpios.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/data_stream.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/start_signal_generator.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_mux_experimental.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/frequency_counter.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/LFSR.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/and_2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_writer.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/drive_leds.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/promedio_lineal.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/lockin_segmentado.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/linear_mean.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_processing_LI.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/bram_test.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/GCL.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/level_detector.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/promedio_coherente.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/multiplicate_ref_2.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/signal_split.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/coherent_average.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/filtro_ma.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/delay_axi_streaming.v C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/my_cores/trigger_simulator.v}
-launch_runs synth_1 -jobs 2
-launch_runs synth_1 -jobs 2
-update_ip_catalog -rebuild
-launch_runs synth_1 -jobs 2
-launch_runs synth_1 -jobs 2
-set_property source_mgmt_mode All [current_project]
+open_project C:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.xpr
+open_bd_design {C:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/bd/system/system.bd}
 update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 2
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/signal_split.v] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/signal_split.v
-move_files -fileset sim_1 [get_files  C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/signal_decoder.v]
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/signal_decoder.v] -no_script -reset -force -quiet
-remove_files  -fileset sim_1 C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/signal_decoder.v
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_mux_experimental.v] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_mux_experimental.v
-move_files -fileset sim_1 [get_files  C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_test.v]
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_test.v] -no_script -reset -force -quiet
-remove_files  -fileset sim_1 C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_test.v
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_writer.v] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_writer.v
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_writer_experimental.v] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/bram_writer_experimental.v
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/data_stream.v] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/data_stream.v
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/frequency_counter.v] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/frequency_counter.v
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/pow2.v] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/pow2.v
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/promedio_coherente.v] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/promedio_coherente.v
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/promedio_lineal.v] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/adquisidor_red_pitaya/adquisidor.srcs/user_ip/my_cores/promedio_lineal.v
-update_compile_order -fileset sources_1
-update_module_reference system_signal_split_0_0
-update_module_reference system_start_signal_generat_0_0
-update_module_reference system_signal_processing_LI_0_0
+startgroup
+make_bd_pins_external  [get_bd_pins control/uP_control/param_out_8_9/gpio_io_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins control/uP_control/param_out_8_9/gpio2_io_o]
+endgroup
+set_property name param_out_8 [get_bd_pins control/gpio_io_o_0]
+set_property name param_out_9 [get_bd_pins control/gpio2_io_o_0]
+delete_bd_objs [get_bd_nets control_gpio_io_o_0]
+delete_bd_objs [get_bd_nets control_gpio2_io_o_0] [get_bd_ports gpio2_io_o_0]
+delete_bd_objs [get_bd_ports gpio_io_o_0]
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets control_GPIO_0]
+delete_bd_objs [get_bd_intf_ports GPIO_0]
+delete_bd_objs [get_bd_intf_nets control/Conn1]
+delete_bd_objs [get_bd_intf_pins control/uP_control/GPIO_0]
+delete_bd_objs [get_bd_intf_pins control/GPIO_0]
+startgroup
+make_bd_pins_external  [get_bd_pins control/uP_control/finished/gpio_io_i]
+endgroup
+set_property name finished [get_bd_pins control/uP_control/gpio_io_i_0]
+set_property name finichsed [get_bd_pins control/gpio_io_i_0]
+set_property name finished [get_bd_pins control/finichsed]
+delete_bd_objs [get_bd_nets gpio_io_i_0_1] [get_bd_ports gpio_io_i_0]
+regenerate_bd_layout
+startgroup
+make_bd_pins_external  [get_bd_pins control/uP_control/param_in_0_1/gpio_io_i]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins control/uP_control/param_in_0_1/gpio2_io_i]
+endgroup
+set_property name param_in_0 [get_bd_pins control/gpio_io_i_0]
+set_property name param_in_1 [get_bd_pins control/gpio2_io_i_0]
+delete_bd_objs [get_bd_nets gpio_io_i_0_1] [get_bd_ports gpio_io_i_0]
+delete_bd_objs [get_bd_nets gpio2_io_i_0_1] [get_bd_ports gpio2_io_i_0]
+connect_bd_net [get_bd_pins control/param_out_0] [get_bd_pins decimator/sel] -boundary_type upper
+connect_bd_net [get_bd_pins decimator/decimate_value] [get_bd_pins control/param_out_1] -boundary_type upper
+connect_bd_net [get_bd_pins data_source/sel] [get_bd_pins control/param_out_2] -boundary_type upper
+group_bd_cells procesamiento [get_bd_cells decimator]
+connect_bd_net [get_bd_pins procesamiento/decimator/finish] [get_bd_pins control/finished] -boundary_type upper
+regenerate_bd_layout
+assign_bd_address
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
-add_files -norecurse -scan_for_includes {C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/lu_tables/y2048_16b.mem C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/lu_tables/x2048_14b.mem C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/user_ip/lu_tables/x2048_16b.mem}
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/lu_tables/x2048_16b.mem] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/lu_tables/x2048_16b.mem
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/lu_tables/y2048_16b.mem] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/lu_tables/y2048_16b.mem
-export_ip_user_files -of_objects  [get_files C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/lu_tables/x2048_14b.mem] -no_script -reset -force -quiet
-remove_files  C:/Users/mati9/Documents/ProyectosRedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/imports/lu_tables/x2048_14b.mem
 reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+report_ip_status -name ip_status 
+set_property LOCK_UPGRADE 1 [get_bd_cells /data_source/DAC/axis_red_pitaya_dac_0]
+set_property LOCK_UPGRADE 1 [get_bd_cells /data_source/DAC/axis_constant_0]
+set_property LOCK_UPGRADE 1 [get_bd_cells /data_source/generador_sinusoidal/axis_constant_0]
+set_property LOCK_UPGRADE 1 [get_bd_cells /data_source/ADC/axis_red_pitaya_adc_0]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+connect_bd_net [get_bd_pins control/uP_control/param_out_8_9/s_axi_aclk] [get_bd_pins control/uP_control/param_out_6_7/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/param_in_0_1/s_axi_aclk] [get_bd_pins control/uP_control/param_out_8_9/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aclk] [get_bd_pins control/uP_control/param_out_0_1/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aclk] [get_bd_pins control/uP_control/param_out_2_3/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aclk] [get_bd_pins control/uP_control/param_out_4_5/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aclk] [get_bd_pins control/uP_control/param_out_6_7/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_out_0_1/s_axi_aresetn]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_out_2_3/s_axi_aresetn]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_out_4_5/s_axi_aresetn]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_out_6_7/s_axi_aresetn]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_in_0_1/s_axi_aresetn]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_out_8_9/s_axi_aresetn]
+report_ip_status -name ip_status 
+save_bd_design
+launch_runs synth_1 -jobs 2
+save_bd_design
+launch_runs synth_1 -jobs 2
+save_bd_design
+launch_runs synth_1 -jobs 2
+save_bd_design
+launch_runs synth_1 -jobs 2
+ungroup_bd_cells [get_bd_cells data_source]
+save_bd_design
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+group_bd_cells data_source [get_bd_cells selector_data_in] [get_bd_cells generador_sinusoidal] [get_bd_cells DAC] [get_bd_cells ADC]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+set_property CONFIG.CLK_DOMAIN /data_source/DAC/clk_wiz_0_clk_out1 [get_bd_pins /data_source/DAC/axis_red_pitaya_dac_0/ddr_clk]
+save_bd_design
 launch_runs synth_1 -jobs 2
 wait_on_run synth_1
 launch_runs impl_1 -jobs 2
 wait_on_run impl_1
-set_property location {1 422 189} [get_bd_cells referencias]
-set_property name generador_sinusoidal [get_bd_cells referencias]
-delete_bd_objs [get_bd_nets generador_sinusoidal/ref_cos_Dout] [get_bd_nets generador_sinusoidal/delay_axi_streaming_0_data_out] [get_bd_nets generador_sinusoidal/delay_axi_streaming_0_data_out_valid] [get_bd_cells generador_sinusoidal/delay_axi_streaming_0]
-delete_bd_objs [get_bd_nets generador_sinusoidal/delay_axi_streaming_1_data_out_valid] [get_bd_nets generador_sinusoidal/bypass_n_1] [get_bd_nets generador_sinusoidal/delay_axi_streaming_1_data_out] [get_bd_cells generador_sinusoidal/delay_axi_streaming_1]
-undo
-reset_run impl_1
-delete_bd_objs [get_bd_nets generador_sinusoidal/delay_axi_streaming_1_data_out_valid] [get_bd_nets generador_sinusoidal/and_2_1_c] [get_bd_cells generador_sinusoidal/and_2_1]
-delete_bd_objs [get_bd_nets generador_sinusoidal/bypass_n_1] [get_bd_nets generador_sinusoidal/delay_axi_streaming_1_data_out] [get_bd_cells generador_sinusoidal/delay_axi_streaming_1]
 regenerate_bd_layout
-delete_bd_objs [get_bd_nets lock_in_data_out_fase] [get_bd_nets lock_in_processing_finished] [get_bd_nets uP_control_gpio2_io_o] [get_bd_nets referencias_data_out] [get_bd_nets referencias_data_out1] [get_bd_nets lock_in_data_out_cuad] [get_bd_nets referencias_c] [get_bd_nets lock_in_datos_promediados] [get_bd_cells lock_in]
-delete_bd_objs [get_bd_pins generador_sinusoidal/c]
-update_compile_order -fileset sources_1
-connect_bd_net [get_bd_pins generador_sinusoidal/data_out1] [get_bd_pins generador_sinusoidal/ref_cos/Dout]
-delete_bd_objs [get_bd_pins generador_sinusoidal/data_out]
-set_property name sen [get_bd_nets referencias_Dout1]
-undo
-set_property name signal_sen [get_bd_pins generador_sinusoidal/Dout1]
-set_property name signal_cos [get_bd_pins generador_sinusoidal/data_out1]
-set_property name signal [get_bd_nets referencias_m_axis_data_tvalid]
-set_property name signal_valid [get_bd_pins generador_sinusoidal/m_axis_data_tvalid]
-set_property name signal_start [get_bd_pins generador_sinusoidal/start]
-set_property location {1 551 326} [get_bd_cells generador_sinusoidal]
-set_property location {1.5 1030 457} [get_bd_cells selector_data_in]
-set_property location {1 648 461} [get_bd_cells selector_data_in]
-set_property location {1.5 1451 645} [get_bd_cells decimator]
-set_property location {1 460 1062} [get_bd_cells DAC]
-delete_bd_objs [get_bd_nets selector_data_in1_finish] [get_bd_nets gpio_io_i3_1] [get_bd_cells and_2_0]
-set_property location {2 977 323} [get_bd_cells decimator]
-delete_bd_objs [get_bd_nets generador_sinusoidal/start_signal_generat_0_start] [get_bd_nets generador_sinusoidal/approxM_1] [get_bd_cells generador_sinusoidal/start_signal_generat_0]
-delete_bd_objs [get_bd_nets referencias_start] [get_bd_pins generador_sinusoidal/signal_start]
-delete_bd_objs [get_bd_nets uP_control_gpio_io_o] [get_bd_pins generador_sinusoidal/approxM]
-delete_bd_objs [get_bd_pins generador_sinusoidal/bypass_n]
-set_property name data_ch1 [get_bd_pins ADC/M_AXIS_PORT1_tdata]
-set_property name data_ch1_valid [get_bd_pins ADC/M_AXIS_PORT1_tvalid]
-update_compile_order -fileset sources_1
-set_property name data_ch2 [get_bd_pins ADC/M_AXIS_PORT2_tdata]
-set_property name data_ch2_valid [get_bd_pins ADC/M_AXIS_PORT2_tvalid]
-set_property name fase_dds_compiler [get_bd_pins DAC/cfg_data]
-group_bd_cells data_source [get_bd_cells selector_data_in] [get_bd_cells generador_sinusoidal] [get_bd_cells ADC] [get_bd_cells DAC]
-set_property location {2 832 580} [get_bd_cells data_source]
-set_property location {1.5 1511 522} [get_bd_cells decimator]
-move_bd_cells [get_bd_cells /] [get_bd_cells uP_control/enable_and_reset]
-undo
-delete_bd_objs [get_bd_nets uP_control/res_fase_low_Dout] [get_bd_nets uP_control/res_fase_up_Dout] [get_bd_intf_nets uP_control/ps7_0_axi_periph_M01_AXI] [get_bd_cells uP_control/result_fase]
-delete_bd_objs [get_bd_nets uP_control/res_cuad_low_Dout] [get_bd_nets uP_control/res_cuad_up_Dout] [get_bd_intf_nets uP_control/ps7_0_axi_periph_M03_AXI] [get_bd_cells uP_control/result_cuad]
-delete_bd_objs [get_bd_cells uP_control/res_fase_low]
-delete_bd_objs [get_bd_nets uP_control/Din2_1] [get_bd_cells uP_control/res_fase_up]
-delete_bd_objs [get_bd_cells uP_control/res_cuad_low]
-delete_bd_objs [get_bd_nets uP_control/Din1_1] [get_bd_cells uP_control/res_cuad_up]
-delete_bd_objs [get_bd_nets uP_control/gpio_io_i_1] [get_bd_intf_nets uP_control/S_AXI7_1] [get_bd_cells uP_control/datos_promediados]
-delete_bd_objs [get_bd_nets uP_control/Trigger_gpio_io_o] [get_bd_nets uP_control/Net5] [get_bd_intf_nets uP_control/S_AXI4_1] [get_bd_cells uP_control/M_and_Nma]
-move_bd_cells [get_bd_cells /] [get_bd_cells uP_control/enable_and_reset]
-move_bd_cells [get_bd_cells uP_control] [get_bd_cells enable_and_reset]
-delete_bd_objs [get_bd_nets uP_control/adc_decimator_and_data_select_gpio_io_o] [get_bd_nets uP_control/noise_bits_and_data_select_gpio2_io_o] [get_bd_intf_nets uP_control/S_AXI2_1] [get_bd_cells uP_control/adc_decimator_and_data_select]
-delete_bd_objs [get_bd_nets uP_control/phaseDAC_and_phaseREF_gpio_io_o] [get_bd_nets uP_control/phaseDAC_and_phaseREF_gpio2_io_o] [get_bd_intf_nets uP_control/S_AXI5_1] [get_bd_cells uP_control/phaseDAC_and_phaseREF]
-delete_bd_objs [get_bd_intf_pins uP_control/S_AXI2]
-delete_bd_objs [get_bd_intf_pins uP_control/S_AXI7]
-delete_bd_objs [get_bd_intf_pins uP_control/S_AXI5]
 regenerate_bd_layout
-delete_bd_objs [get_bd_intf_pins uP_control/S_AXI4]
-delete_bd_objs [get_bd_intf_pins uP_control/S_AXI1]
-delete_bd_objs [get_bd_pins uP_control/gpio2_io_o]
-delete_bd_objs [get_bd_pins uP_control/gpio_io_o]
-delete_bd_objs [get_bd_nets uP_control_gpio2_io_o1] [get_bd_pins uP_control/gpio2_io_o1]
-delete_bd_objs [get_bd_nets cfg_data_1] [get_bd_pins uP_control/gpio_io_o2]
-delete_bd_objs [get_bd_nets uP_control_gpio2_io_o2] [get_bd_pins uP_control/gpio2_io_o2]
-delete_bd_objs [get_bd_nets uP_control_gpio_io_o1] [get_bd_pins uP_control/gpio_io_o1]
-delete_bd_objs [get_bd_pins uP_control/Din1]
-delete_bd_objs [get_bd_pins uP_control/gpio_io_i]
-delete_bd_objs [get_bd_pins uP_control/Din2]
-delete_bd_objs [get_bd_nets uP_control/gpio_io_i3_1]
-delete_bd_objs [get_bd_pins uP_control/gpio_io_i3]
-delete_bd_objs [get_bd_intf_nets uP_M04_AXI]
-delete_bd_objs [get_bd_intf_nets uP_control/S_AXI3_1]
-move_bd_cells [get_bd_cells /] [get_bd_cells uP_control/enable_and_reset]
-undo
-connect_bd_intf_net -boundary_type upper [get_bd_intf_pins uP_control/S_AXI] [get_bd_intf_pins uP_control/enable_and_reset/S_AXI]
-delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M03_AXI]
-delete_bd_objs [get_bd_intf_nets uP_M05_AXI]
-delete_bd_objs [get_bd_intf_nets uP_M06_AXI]
-delete_bd_objs [get_bd_intf_nets S_AXI2_1]
-delete_bd_objs [get_bd_intf_nets S_AXI5_1]
-delete_bd_objs [get_bd_intf_nets uP_M08_AXI]
-regenerate_bd_layout
-undo
-delete_bd_objs [get_bd_intf_nets uP_control/Conn1]
-set_property name finished [get_bd_cells uP_control/finished_and_decimator_method]
-set_property name reset_n [get_bd_pins uP_control/Dout]
-set_property name enable [get_bd_pins uP_control/Dout1]
-set_property name finished_and_param0 [get_bd_cells uP_control/finished]
-delete_bd_objs [get_bd_nets uP_control/finished_gpio2_io_o]
-undo
-connect_bd_net [get_bd_pins uP_control/finished_and_param0/gpio_io_i] [get_bd_pins uP_control/finished_and_param0/gpio2_io_o]
-delete_bd_objs [get_bd_nets uP_control/finished_gpio2_io_o]
-undo
-delete_bd_objs [get_bd_nets uP_control_gpio2_io_o3]
-delete_bd_objs [get_bd_nets uP_control/finished_gpio2_io_o]
-set_property name finished [get_bd_cells uP_control/finished_and_param0]
-delete_bd_objs [get_bd_pins uP_control/gpio2_io_o3]
-save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
