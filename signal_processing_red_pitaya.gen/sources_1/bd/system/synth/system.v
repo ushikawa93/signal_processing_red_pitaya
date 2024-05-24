@@ -1,8 +1,8 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Thu May 23 22:58:06 2024
-//Host        : DESKTOP-4F847D8 running 64-bit major release  (build 9200)
+//Date        : Fri May 24 18:28:12 2024
+//Host        : DESKTOP-BRUHM76 running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
 //Purpose     : IP block netlist
@@ -759,6 +759,8 @@ module data_source_imp_KBXA35
     dac_wrt_o,
     data_out,
     data_out_valid,
+    phase_dac,
+    phase_sen_interno,
     sel);
   input aclken;
   output adc_clk;
@@ -775,6 +777,8 @@ module data_source_imp_KBXA35
   output dac_wrt_o;
   output [31:0]data_out;
   output data_out_valid;
+  input [31:0]phase_dac;
+  input [31:0]phase_sen_interno;
   input [31:0]sel;
 
   wire [31:0]ADC_M_AXIS_PORT1_tdata;
@@ -790,6 +794,8 @@ module data_source_imp_KBXA35
   wire axis_red_pitaya_dac_0_dac_rst;
   wire axis_red_pitaya_dac_0_dac_sel;
   wire axis_red_pitaya_dac_0_dac_wrt;
+  wire [31:0]cfg_data_1;
+  wire [31:0]fase_dds_compiler_1;
   wire [13:0]referencias_Dout1;
   wire referencias_m_axis_data_tvalid;
   wire [31:0]sel_1;
@@ -804,6 +810,7 @@ module data_source_imp_KBXA35
   assign adc_csn_o = ADC_adc_csn_o;
   assign adc_dat_a_i_1 = adc_dat_a_i[13:0];
   assign adc_dat_b_i_1 = adc_dat_b_i[13:0];
+  assign cfg_data_1 = phase_sen_interno[31:0];
   assign dac_clk_o = axis_red_pitaya_dac_0_dac_clk;
   assign dac_dat_o[13:0] = axis_red_pitaya_dac_0_dac_dat;
   assign dac_rst_o = axis_red_pitaya_dac_0_dac_rst;
@@ -811,6 +818,7 @@ module data_source_imp_KBXA35
   assign dac_wrt_o = axis_red_pitaya_dac_0_dac_wrt;
   assign data_out[31:0] = selector_data_in_data_out;
   assign data_out_valid = selector_data_in_data_out_valid;
+  assign fase_dds_compiler_1 = phase_dac[31:0];
   assign sel_1 = sel[31:0];
   assign uP_control_Dout = aresetn;
   assign uP_control_Dout1 = aclken;
@@ -832,12 +840,12 @@ module data_source_imp_KBXA35
         .dac_rst_o(axis_red_pitaya_dac_0_dac_rst),
         .dac_sel_o(axis_red_pitaya_dac_0_dac_sel),
         .dac_wrt_o(axis_red_pitaya_dac_0_dac_wrt),
-        .fase_dds_compiler({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
+        .fase_dds_compiler(fase_dds_compiler_1));
   generador_sinusoidal_imp_1QPBKUK generador_sinusoidal
        (.aclk(ADC_adc_clk),
         .aclken(uP_control_Dout1),
         .aresetn(uP_control_Dout),
-        .cfg_data({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .cfg_data(cfg_data_1),
         .signal_sen(referencias_Dout1),
         .signal_valid(referencias_m_axis_data_tvalid));
   system_mux_0_0 selector_data_in
@@ -992,19 +1000,16 @@ endmodule
 module gpios_and_leds_imp_198WUFD
    (exp_n_tri_io,
     exp_p_tri_io,
-    input_0,
     led_o);
   inout [7:0]exp_n_tri_io;
   inout [7:0]exp_p_tri_io;
-  input input_0;
   output [7:0]led_o;
 
   wire [7:0]Net;
   wire [7:0]Net2;
   wire [7:0]drive_leds_0_signal_out;
-  wire input_0_1;
+  wire [0:0]input_0_1;
 
-  assign input_0_1 = input_0;
   assign led_o[7:0] = drive_leds_0_signal_out;
   system_drive_gpios_0_0 drive_gpios_0
        (.input_0(1'b0),
@@ -1026,6 +1031,8 @@ module gpios_and_leds_imp_198WUFD
         .signal_6(1'b0),
         .signal_7(1'b0),
         .signal_out(drive_leds_0_signal_out));
+  system_xlconstant_0_0 vcc
+       (.dout(input_0_1));
 endmodule
 
 module m00_couplers_imp_17O37C
@@ -2244,6 +2251,8 @@ module procesamiento_imp_QIVR9Q
   wire [31:0]control_param_out_0;
   wire [31:0]decimate_value_1;
   wire decimator_finish;
+  wire [31:0]fir_filter_wrapper_0_data_out;
+  wire fir_filter_wrapper_0_data_out_valid;
   wire [31:0]selector_data_in_data_out;
   wire selector_data_in_data_out_valid;
   wire uP_control_Dout;
@@ -2261,8 +2270,8 @@ module procesamiento_imp_QIVR9Q
   assign uP_control_Dout1 = enable;
   decimator_imp_DJ6XEB decimator
        (.clk_in(ADC_adc_clk),
-        .data_in(selector_data_in_data_out),
-        .data_in_valid(selector_data_in_data_out_valid),
+        .data_in(fir_filter_wrapper_0_data_out),
+        .data_in_valid(fir_filter_wrapper_0_data_out_valid),
         .data_out(axi_str_rxd_tdata_1),
         .data_out_valid(axi_str_rxd_tvalid1_1),
         .decimate_value(decimate_value_1),
@@ -2270,6 +2279,14 @@ module procesamiento_imp_QIVR9Q
         .finish(decimator_finish),
         .reset_n(uP_control_Dout),
         .sel(control_param_out_0));
+  system_fir_filter_wrapper_0_0 fir_filter_wrapper_0
+       (.clk(ADC_adc_clk),
+        .data_in(selector_data_in_data_out),
+        .data_in_valid(selector_data_in_data_out_valid),
+        .data_out(fir_filter_wrapper_0_data_out),
+        .data_out_valid(fir_filter_wrapper_0_data_out_valid),
+        .enable(uP_control_Dout1),
+        .reset_n(uP_control_Dout));
 endmodule
 
 module s00_couplers_imp_EDLKFD
@@ -2577,7 +2594,7 @@ module s00_couplers_imp_EDLKFD
         .s_axi_wvalid(s00_couplers_to_auto_pc_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=56,numReposBlks=35,numNonXlnxBlks=4,numHierBlks=21,maxHierDepth=2,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=8,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=4,da_clkrst_cnt=6,da_ps7_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "system.hwdef" *) 
+(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=58,numReposBlks=37,numNonXlnxBlks=4,numHierBlks=21,maxHierDepth=2,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=9,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=15,da_board_cnt=4,da_clkrst_cnt=6,da_ps7_cnt=1,synth_mode=Global}" *) (* HW_HANDOFF = "system.hwdef" *) 
 module system
    (DDR_addr,
     DDR_ba,
@@ -2678,6 +2695,8 @@ module system
   wire axis_red_pitaya_dac_0_dac_sel;
   wire axis_red_pitaya_dac_0_dac_wrt;
   wire [31:0]control_param_out_0;
+  wire [31:0]control_param_out_3;
+  wire [31:0]control_param_out_4;
   wire [1:0]daisy_n_i_1;
   wire [1:0]daisy_p_i_1;
   wire [31:0]decimate_value_1;
@@ -2760,6 +2779,8 @@ module system
         .param_out_0(control_param_out_0),
         .param_out_1(decimate_value_1),
         .param_out_2(sel_1),
+        .param_out_3(control_param_out_3),
+        .param_out_4(control_param_out_4),
         .reset_n(uP_control_Dout));
   data_source_imp_KBXA35 data_source
        (.aclken(uP_control_Dout1),
@@ -2777,11 +2798,12 @@ module system
         .dac_wrt_o(axis_red_pitaya_dac_0_dac_wrt),
         .data_out(selector_data_in_data_out),
         .data_out_valid(selector_data_in_data_out_valid),
+        .phase_dac(control_param_out_4),
+        .phase_sen_interno(control_param_out_3),
         .sel(sel_1));
   gpios_and_leds_imp_198WUFD gpios_and_leds
        (.exp_n_tri_io(exp_n_tri_io[7:0]),
         .exp_p_tri_io(exp_p_tri_io[7:0]),
-        .input_0(1'b0),
         .led_o(drive_leds_0_signal_out));
   procesamiento_imp_QIVR9Q procesamiento
        (.clk_in(ADC_adc_clk),

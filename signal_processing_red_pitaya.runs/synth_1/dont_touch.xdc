@@ -23,48 +23,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_driv
 # IP: bd/system/ip/system_drive_leds_0_0/system_drive_leds_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_drive_leds_0_0 || ORIG_REF_NAME==system_drive_leds_0_0} -quiet] -quiet
 
-# IP: bd/system/ip/system_decimator_0_0/system_decimator_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_decimator_0_0 || ORIG_REF_NAME==system_decimator_0_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_selector_data_in_0/system_selector_data_in_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_selector_data_in_0 || ORIG_REF_NAME==system_selector_data_in_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_linear_mean_0_0/system_linear_mean_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_linear_mean_0_0 || ORIG_REF_NAME==system_linear_mean_0_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_mux_0_0/system_mux_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_mux_0_0 || ORIG_REF_NAME==system_mux_0_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_axis_constant_0_1/system_axis_constant_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axis_constant_0_1 || ORIG_REF_NAME==system_axis_constant_0_1} -quiet] -quiet
-
-# IP: bd/system/ip/system_xlslice_1_0/system_xlslice_1_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xlslice_1_0 || ORIG_REF_NAME==system_xlslice_1_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_dds_compiler_0_1/system_dds_compiler_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_dds_compiler_0_1 || ORIG_REF_NAME==system_dds_compiler_0_1} -quiet] -quiet
-
-# IP: bd/system/ip/system_xlslice_0_6/system_xlslice_0_6.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xlslice_0_6 || ORIG_REF_NAME==system_xlslice_0_6} -quiet] -quiet
-
-# IP: bd/system/ip/system_axis_red_pitaya_adc_0_0/system_axis_red_pitaya_adc_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axis_red_pitaya_adc_0_0 || ORIG_REF_NAME==system_axis_red_pitaya_adc_0_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_signal_split_0_0/system_signal_split_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_signal_split_0_0 || ORIG_REF_NAME==system_signal_split_0_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_axis_red_pitaya_dac_0_0/system_axis_red_pitaya_dac_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axis_red_pitaya_dac_0_0 || ORIG_REF_NAME==system_axis_red_pitaya_dac_0_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_dds_compiler_0_0/system_dds_compiler_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_dds_compiler_0_0 || ORIG_REF_NAME==system_dds_compiler_0_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_clk_wiz_0_0 || ORIG_REF_NAME==system_clk_wiz_0_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_axis_constant_0_0/system_axis_constant_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axis_constant_0_0 || ORIG_REF_NAME==system_axis_constant_0_0} -quiet] -quiet
-
 # IP: bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_processing_system7_0_0 || ORIG_REF_NAME==system_processing_system7_0_0} -quiet] -quiet
 
@@ -113,102 +71,150 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_para
 # IP: bd/system/ip/system_param_out_8_9_0/system_param_out_8_9_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_param_out_8_9_0 || ORIG_REF_NAME==system_param_out_8_9_0} -quiet] -quiet
 
+# IP: bd/system/ip/system_decimator_0_0/system_decimator_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_decimator_0_0 || ORIG_REF_NAME==system_decimator_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_selector_data_in_0/system_selector_data_in_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_selector_data_in_0 || ORIG_REF_NAME==system_selector_data_in_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_linear_mean_0_0/system_linear_mean_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_linear_mean_0_0 || ORIG_REF_NAME==system_linear_mean_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_mux_0_0/system_mux_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_mux_0_0 || ORIG_REF_NAME==system_mux_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_axis_constant_0_1/system_axis_constant_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axis_constant_0_1 || ORIG_REF_NAME==system_axis_constant_0_1} -quiet] -quiet
+
+# IP: bd/system/ip/system_xlslice_1_0/system_xlslice_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xlslice_1_0 || ORIG_REF_NAME==system_xlslice_1_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_dds_compiler_0_1/system_dds_compiler_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_dds_compiler_0_1 || ORIG_REF_NAME==system_dds_compiler_0_1} -quiet] -quiet
+
+# IP: bd/system/ip/system_xlslice_0_6/system_xlslice_0_6.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xlslice_0_6 || ORIG_REF_NAME==system_xlslice_0_6} -quiet] -quiet
+
+# IP: bd/system/ip/system_axis_red_pitaya_dac_0_0/system_axis_red_pitaya_dac_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axis_red_pitaya_dac_0_0 || ORIG_REF_NAME==system_axis_red_pitaya_dac_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_dds_compiler_0_0/system_dds_compiler_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_dds_compiler_0_0 || ORIG_REF_NAME==system_dds_compiler_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_clk_wiz_0_0 || ORIG_REF_NAME==system_clk_wiz_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_axis_constant_0_0/system_axis_constant_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axis_constant_0_0 || ORIG_REF_NAME==system_axis_constant_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_axis_red_pitaya_adc_0_0/system_axis_red_pitaya_adc_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axis_red_pitaya_adc_0_0 || ORIG_REF_NAME==system_axis_red_pitaya_adc_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_signal_split_0_0/system_signal_split_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_signal_split_0_0 || ORIG_REF_NAME==system_signal_split_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_xlconstant_0_0/system_xlconstant_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xlconstant_0_0 || ORIG_REF_NAME==system_xlconstant_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_fir_filter_wrapper_0_0/system_fir_filter_wrapper_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_fir_filter_wrapper_0_0 || ORIG_REF_NAME==system_fir_filter_wrapper_0_0} -quiet] -quiet
+
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_board.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_util_ds_buf_1_0 || ORIG_REF_NAME==system_util_ds_buf_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_ooc.xdc
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_util_ds_buf_2_0/system_util_ds_buf_2_0_board.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_util_ds_buf_2_0/system_util_ds_buf_2_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_util_ds_buf_2_0 || ORIG_REF_NAME==system_util_ds_buf_2_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_util_ds_buf_2_0/system_util_ds_buf_2_0_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_util_ds_buf_2_0/system_util_ds_buf_2_0_ooc.xdc
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_clk_wiz_0_0 || ORIG_REF_NAME==system_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_clk_wiz_0_0 || ORIG_REF_NAME==system_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_ooc.xdc
-
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_processing_system7_0_0 || ORIG_REF_NAME==system_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0_board.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_rst_ps7_0_125M_0 || ORIG_REF_NAME==system_rst_ps7_0_125M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_rst_ps7_0_125M_0 || ORIG_REF_NAME==system_rst_ps7_0_125M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_axis_clock_converter_0_1/system_axis_clock_converter_0_1_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_axis_clock_converter_0_1/system_axis_clock_converter_0_1_ooc.xdc
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_result_cuad_0/system_result_cuad_0_board.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_result_cuad_0/system_result_cuad_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_result_cuad_0 || ORIG_REF_NAME==system_result_cuad_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_result_cuad_0/system_result_cuad_0_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_result_cuad_0/system_result_cuad_0_ooc.xdc
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_result_cuad_0/system_result_cuad_0.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_result_cuad_0/system_result_cuad_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_result_cuad_0 || ORIG_REF_NAME==system_result_cuad_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_board.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_gpio_0_2 || ORIG_REF_NAME==system_axi_gpio_0_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2_ooc.xdc
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_axi_gpio_0_2/system_axi_gpio_0_2.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_gpio_0_2 || ORIG_REF_NAME==system_axi_gpio_0_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param0_0/system_finished_and_param0_0_board.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param0_0/system_finished_and_param0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_finished_and_param0_0 || ORIG_REF_NAME==system_finished_and_param0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param0_0/system_finished_and_param0_0_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param0_0/system_finished_and_param0_0_ooc.xdc
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param0_0/system_finished_and_param0_0.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param0_0/system_finished_and_param0_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_finished_and_param0_0 || ORIG_REF_NAME==system_finished_and_param0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_0/system_finished_and_param1_0_board.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_0/system_finished_and_param1_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_finished_and_param1_0 || ORIG_REF_NAME==system_finished_and_param1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_0/system_finished_and_param1_0_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_0/system_finished_and_param1_0_ooc.xdc
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_0/system_finished_and_param1_0.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_0/system_finished_and_param1_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_finished_and_param1_0 || ORIG_REF_NAME==system_finished_and_param1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_1/system_finished_and_param1_1_board.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_1/system_finished_and_param1_1_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_finished_and_param1_1 || ORIG_REF_NAME==system_finished_and_param1_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_1/system_finished_and_param1_1_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_1/system_finished_and_param1_1_ooc.xdc
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_1/system_finished_and_param1_1.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_1/system_finished_and_param1_1.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_finished_and_param1_1 || ORIG_REF_NAME==system_finished_and_param1_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_2/system_finished_and_param1_2_board.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_2/system_finished_and_param1_2_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_finished_and_param1_2 || ORIG_REF_NAME==system_finished_and_param1_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_2/system_finished_and_param1_2_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_2/system_finished_and_param1_2_ooc.xdc
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_2/system_finished_and_param1_2.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_finished_and_param1_2/system_finished_and_param1_2.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_finished_and_param1_2 || ORIG_REF_NAME==system_finished_and_param1_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_6_7_0/system_param_out_6_7_0_board.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_6_7_0/system_param_out_6_7_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_param_out_6_7_0 || ORIG_REF_NAME==system_param_out_6_7_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_6_7_0/system_param_out_6_7_0_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_6_7_0/system_param_out_6_7_0_ooc.xdc
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_6_7_0/system_param_out_6_7_0.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_6_7_0/system_param_out_6_7_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_param_out_6_7_0 || ORIG_REF_NAME==system_param_out_6_7_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_8_9_0/system_param_out_8_9_0_board.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_8_9_0/system_param_out_8_9_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_param_out_8_9_0 || ORIG_REF_NAME==system_param_out_8_9_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_8_9_0/system_param_out_8_9_0_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_8_9_0/system_param_out_8_9_0_ooc.xdc
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_8_9_0/system_param_out_8_9_0.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_param_out_8_9_0/system_param_out_8_9_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_param_out_8_9_0 || ORIG_REF_NAME==system_param_out_8_9_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_clk_wiz_0_0 || ORIG_REF_NAME==system_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: c:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/system_ooc.xdc
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_clk_wiz_0_0 || ORIG_REF_NAME==system_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_ooc.xdc
+
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
+
+# XDC: c:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.gen/sources_1/bd/system/system_ooc.xdc

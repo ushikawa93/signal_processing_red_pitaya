@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May 23 22:58:08 2024" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May 24 18:28:13 2024" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="system" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -325,7 +325,7 @@
             <CONNECTION INSTANCE="procesamiento_decimator_selector_data_in1" PORT="data_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="m_axis_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="m_axis_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -376,7 +376,7 @@
           <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="system_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
@@ -409,6 +409,7 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="procesamiento_decimator_decimator_0" PORT="enable"/>
             <CONNECTION INSTANCE="procesamiento_decimator_linear_mean_0" PORT="enable"/>
+            <CONNECTION INSTANCE="procesamiento_fir_filter_wrapper_0" PORT="enable"/>
             <CONNECTION INSTANCE="data_source_DAC_dds_compiler_0" PORT="aclken"/>
             <CONNECTION INSTANCE="data_source_generador_sinusoidal_dds_compiler_0" PORT="aclken"/>
           </CONNECTIONS>
@@ -611,7 +612,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4123FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -725,7 +726,7 @@
         <BUSINTERFACE BUSNAME="control_uP_ps7_0_axi_periph_M01_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -985,7 +986,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4121FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -1090,7 +1091,7 @@
         <BUSINTERFACE BUSNAME="control_uP_ps7_0_axi_periph_M02_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -1341,7 +1342,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4120FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -1443,7 +1444,7 @@
         <BUSINTERFACE BUSNAME="control_uP_ps7_0_axi_periph_M08_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -1699,7 +1700,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4122FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -1810,7 +1811,7 @@
         <BUSINTERFACE BUSNAME="control_uP_ps7_0_axi_periph_M03_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -2066,7 +2067,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4124FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -2166,13 +2167,17 @@
             <CONNECTION INSTANCE="data_source_selector_data_in" PORT="sel"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="gpio2_io_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="gpio2_io_o" RIGHT="0" SIGIS="undef" SIGNAME="control_uP_control_param_out_2_3_gpio2_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_source_generador_sinusoidal_axis_constant_0" PORT="cfg_data"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="control_uP_ps7_0_axi_periph_M04_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -2428,7 +2433,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4125FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -2523,14 +2528,18 @@
             <CONNECTION INSTANCE="control_uP_ps7_0_axi_periph" PORT="M05_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="gpio_io_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="control_uP_control_param_out_4_5_gpio_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_source_DAC_axis_constant_0" PORT="cfg_data"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="31" NAME="gpio2_io_o" RIGHT="0" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="control_uP_ps7_0_axi_periph_M05_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -2786,7 +2795,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4126FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -2888,7 +2897,7 @@
         <BUSINTERFACE BUSNAME="control_uP_ps7_0_axi_periph_M06_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -3144,7 +3153,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4127FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -3246,7 +3255,7 @@
         <BUSINTERFACE BUSNAME="control_uP_ps7_0_axi_periph_M07_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="9"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -3327,6 +3336,7 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="procesamiento_decimator_decimator_0" PORT="reset_n"/>
             <CONNECTION INSTANCE="procesamiento_decimator_linear_mean_0" PORT="reset_n"/>
+            <CONNECTION INSTANCE="procesamiento_fir_filter_wrapper_0" PORT="reset_n"/>
             <CONNECTION INSTANCE="data_source_DAC_dds_compiler_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="data_source_generador_sinusoidal_dds_compiler_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="control_uP_fifo_1" PORT="s_axi_aresetn"/>
@@ -3924,7 +3934,7 @@
       </PARAMETERS>
       <PORTS>
         <PORT DIR="O" NAME="interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -4041,7 +4051,7 @@
         <BUSINTERFACE BUSNAME="control_uP_ps7_0_axi_periph_M00_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -4099,7 +4109,7 @@
           <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="system_processing_system7_0_0_FCLK_CLK0"/>
           <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
@@ -4421,12 +4431,12 @@
         <PARAMETER NAME="PCW_USE_S_AXI_HP1" VALUE="0"/>
         <PARAMETER NAME="PCW_USE_S_AXI_HP2" VALUE="0"/>
         <PARAMETER NAME="PCW_USE_S_AXI_HP3" VALUE="0"/>
-        <PARAMETER NAME="PCW_M_AXI_GP0_FREQMHZ" VALUE="125"/>
+        <PARAMETER NAME="PCW_M_AXI_GP0_FREQMHZ" VALUE="125.0"/>
         <PARAMETER NAME="PCW_M_AXI_GP1_FREQMHZ" VALUE="10"/>
         <PARAMETER NAME="PCW_S_AXI_GP0_FREQMHZ" VALUE="10"/>
         <PARAMETER NAME="PCW_S_AXI_GP1_FREQMHZ" VALUE="10"/>
         <PARAMETER NAME="PCW_S_AXI_ACP_FREQMHZ" VALUE="10"/>
-        <PARAMETER NAME="PCW_S_AXI_HP0_FREQMHZ" VALUE="125"/>
+        <PARAMETER NAME="PCW_S_AXI_HP0_FREQMHZ" VALUE="125.0"/>
         <PARAMETER NAME="PCW_S_AXI_HP1_FREQMHZ" VALUE="10"/>
         <PARAMETER NAME="PCW_S_AXI_HP2_FREQMHZ" VALUE="10"/>
         <PARAMETER NAME="PCW_S_AXI_HP3_FREQMHZ" VALUE="10"/>
@@ -5214,7 +5224,7 @@
             <CONNECTION INSTANCE="control_uP_ps7_0_axi_periph" PORT="S00_AXI_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="M_AXI_GP0_ACLK" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="M_AXI_GP0_ACLK" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -5289,7 +5299,7 @@
         <PORT DIR="O" LEFT="7" NAME="S_AXI_HP0_WCOUNT" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="2" NAME="S_AXI_HP0_RACOUNT" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="5" NAME="S_AXI_HP0_WACOUNT" RIGHT="0" SIGIS="undef"/>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="S_AXI_HP0_ACLK" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="S_AXI_HP0_ACLK" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -5323,7 +5333,7 @@
         <PORT DIR="I" LEFT="5" NAME="S_AXI_HP0_WID" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" LEFT="63" NAME="S_AXI_HP0_WDATA" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" LEFT="7" NAME="S_AXI_HP0_WSTRB" RIGHT="0" SIGIS="undef"/>
-        <PORT CLKFREQUENCY="125000000" DIR="O" NAME="FCLK_CLK0" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="O" NAME="FCLK_CLK0" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_control_finished" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="control_uP_control_enable_and_reset" PORT="s_axi_aclk"/>
@@ -5557,7 +5567,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI3"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="12"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -5629,7 +5639,7 @@
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="8"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI3"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="125000000"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="1.25e+08"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="6"/>
           <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
@@ -7400,7 +7410,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
+        <PORT CLKFREQUENCY="1.25e+08" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="control_uP_processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
@@ -7457,6 +7467,7 @@
             <CONNECTION INSTANCE="control_uP_axis_clock_converter_0" PORT="s_axis_aclk"/>
             <CONNECTION INSTANCE="procesamiento_decimator_decimator_0" PORT="clk"/>
             <CONNECTION INSTANCE="procesamiento_decimator_linear_mean_0" PORT="clk"/>
+            <CONNECTION INSTANCE="procesamiento_fir_filter_wrapper_0" PORT="clk"/>
             <CONNECTION INSTANCE="data_source_DAC_axis_constant_0" PORT="aclk"/>
             <CONNECTION INSTANCE="data_source_DAC_clk_wiz_0" PORT="clk_in1"/>
             <CONNECTION INSTANCE="data_source_DAC_dds_compiler_0" PORT="aclk"/>
@@ -7628,7 +7639,11 @@
             <CONNECTION INSTANCE="data_source_ADC_axis_red_pitaya_adc_0" PORT="adc_clk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="cfg_data" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="cfg_data" RIGHT="0" SIGIS="undef" SIGNAME="control_uP_control_param_out_4_5_gpio_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="control_uP_control_param_out_4_5" PORT="gpio_io_o"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="31" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="data_source_DAC_axis_constant_0_m_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="data_source_DAC_dds_compiler_0" PORT="s_axis_phase_tdata"/>
@@ -8592,7 +8607,11 @@
             <CONNECTION INSTANCE="data_source_ADC_axis_red_pitaya_adc_0" PORT="adc_clk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="cfg_data" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="cfg_data" RIGHT="0" SIGIS="undef" SIGNAME="control_uP_control_param_out_2_3_gpio2_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="control_uP_control_param_out_2_3" PORT="gpio2_io_o"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="31" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="data_source_generador_sinusoidal_axis_constant_0_m_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="data_source_generador_sinusoidal_dds_compiler_0" PORT="s_axis_phase_tdata"/>
@@ -8944,14 +8963,12 @@
         <PORT DIR="I" NAME="finish_1" SIGIS="undef"/>
         <PORT DIR="O" LEFT="31" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="data_source_selector_data_in_data_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="procesamiento_decimator_decimator_0" PORT="data_in"/>
-            <CONNECTION INSTANCE="procesamiento_decimator_linear_mean_0" PORT="data_in"/>
+            <CONNECTION INSTANCE="procesamiento_fir_filter_wrapper_0" PORT="data_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="data_out_valid" SIGIS="undef" SIGNAME="data_source_selector_data_in_data_out_valid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="procesamiento_decimator_decimator_0" PORT="data_in_valid"/>
-            <CONNECTION INSTANCE="procesamiento_decimator_linear_mean_0" PORT="data_in_valid"/>
+            <CONNECTION INSTANCE="procesamiento_fir_filter_wrapper_0" PORT="data_in_valid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="finish" SIGIS="undef"/>
@@ -8988,7 +9005,11 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="input_0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="input_0" SIGIS="undef" SIGNAME="gpios_and_leds_vcc_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gpios_and_leds_vcc" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" NAME="input_1" SIGIS="undef"/>
         <PORT DIR="I" NAME="input_2" SIGIS="undef"/>
         <PORT DIR="I" NAME="input_3" SIGIS="undef"/>
@@ -9011,7 +9032,11 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="signal_0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="signal_0" SIGIS="undef" SIGNAME="gpios_and_leds_vcc_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gpios_and_leds_vcc" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="I" NAME="signal_1" SIGIS="undef"/>
         <PORT DIR="I" NAME="signal_2" SIGIS="undef"/>
         <PORT DIR="I" NAME="signal_3" SIGIS="undef"/>
@@ -9022,6 +9047,24 @@
         <PORT DIR="O" LEFT="7" NAME="signal_out" RIGHT="0" SIGIS="undef" SIGNAME="gpios_and_leds_drive_leds_0_signal_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="led_o"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/gpios_and_leds/vcc" HWVERSION="1.1" INSTANCE="gpios_and_leds_vcc" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="system_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="gpios_and_leds_vcc_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gpios_and_leds_drive_gpios_1" PORT="input_0"/>
+            <CONNECTION INSTANCE="gpios_and_leds_drive_leds_0" PORT="signal_0"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -9050,14 +9093,14 @@
             <CONNECTION INSTANCE="control_uP_control_enable" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="data_source_selector_data_in_data_out">
+        <PORT DIR="I" LEFT="31" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="procesamiento_fir_filter_wrapper_0_data_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="data_source_selector_data_in" PORT="data_out"/>
+            <CONNECTION INSTANCE="procesamiento_fir_filter_wrapper_0" PORT="data_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_in_valid" SIGIS="undef" SIGNAME="data_source_selector_data_in_data_out_valid">
+        <PORT DIR="I" NAME="data_in_valid" SIGIS="undef" SIGNAME="procesamiento_fir_filter_wrapper_0_data_out_valid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="data_source_selector_data_in" PORT="data_out_valid"/>
+            <CONNECTION INSTANCE="procesamiento_fir_filter_wrapper_0" PORT="data_out_valid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="31" NAME="decimate_value" RIGHT="0" SIGIS="undef" SIGNAME="control_uP_control_param_out_0_1_gpio2_io_o">
@@ -9106,14 +9149,14 @@
             <CONNECTION INSTANCE="control_uP_control_enable" PORT="Dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="data_source_selector_data_in_data_out">
+        <PORT DIR="I" LEFT="31" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="procesamiento_fir_filter_wrapper_0_data_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="data_source_selector_data_in" PORT="data_out"/>
+            <CONNECTION INSTANCE="procesamiento_fir_filter_wrapper_0" PORT="data_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="data_in_valid" SIGIS="undef" SIGNAME="data_source_selector_data_in_data_out_valid">
+        <PORT DIR="I" NAME="data_in_valid" SIGIS="undef" SIGNAME="procesamiento_fir_filter_wrapper_0_data_out_valid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="data_source_selector_data_in" PORT="data_out_valid"/>
+            <CONNECTION INSTANCE="procesamiento_fir_filter_wrapper_0" PORT="data_out_valid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="31" NAME="decimate_value" RIGHT="0" SIGIS="undef" SIGNAME="control_uP_control_param_out_0_1_gpio2_io_o">
@@ -9196,6 +9239,86 @@
         <PORT DIR="O" NAME="finish" SIGIS="undef" SIGNAME="procesamiento_decimator_selector_data_in1_finish">
           <CONNECTIONS>
             <CONNECTION INSTANCE="control_uP_control_finished" PORT="gpio_io_i"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/procesamiento/fir_filter_wrapper_0" HWVERSION="1.0" INSTANCE="procesamiento_fir_filter_wrapper_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fir_filter_wrapper" VLNV="xilinx.com:module_ref:fir_filter_wrapper:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="b_low_pass_0" VALUE="83"/>
+        <PARAMETER NAME="b_low_pass_1" VALUE="118"/>
+        <PARAMETER NAME="b_low_pass_2" VALUE="188"/>
+        <PARAMETER NAME="b_low_pass_3" VALUE="306"/>
+        <PARAMETER NAME="b_low_pass_4" VALUE="482"/>
+        <PARAMETER NAME="b_low_pass_5" VALUE="724"/>
+        <PARAMETER NAME="b_low_pass_6" VALUE="1031"/>
+        <PARAMETER NAME="b_low_pass_7" VALUE="1400"/>
+        <PARAMETER NAME="b_low_pass_8" VALUE="1820"/>
+        <PARAMETER NAME="b_low_pass_9" VALUE="2272"/>
+        <PARAMETER NAME="b_low_pass_10" VALUE="2737"/>
+        <PARAMETER NAME="b_low_pass_11" VALUE="3189"/>
+        <PARAMETER NAME="b_low_pass_12" VALUE="3604"/>
+        <PARAMETER NAME="b_low_pass_13" VALUE="3957"/>
+        <PARAMETER NAME="b_low_pass_14" VALUE="4227"/>
+        <PARAMETER NAME="b_low_pass_15" VALUE="4395"/>
+        <PARAMETER NAME="b_low_pass_16" VALUE="4453"/>
+        <PARAMETER NAME="b_low_pass_17" VALUE="4395"/>
+        <PARAMETER NAME="b_low_pass_18" VALUE="4227"/>
+        <PARAMETER NAME="b_low_pass_19" VALUE="3957"/>
+        <PARAMETER NAME="b_low_pass_20" VALUE="3604"/>
+        <PARAMETER NAME="b_low_pass_21" VALUE="3189"/>
+        <PARAMETER NAME="b_low_pass_22" VALUE="2737"/>
+        <PARAMETER NAME="b_low_pass_23" VALUE="2272"/>
+        <PARAMETER NAME="b_low_pass_24" VALUE="1820"/>
+        <PARAMETER NAME="b_low_pass_25" VALUE="1400"/>
+        <PARAMETER NAME="b_low_pass_26" VALUE="1031"/>
+        <PARAMETER NAME="b_low_pass_27" VALUE="724"/>
+        <PARAMETER NAME="b_low_pass_28" VALUE="482"/>
+        <PARAMETER NAME="b_low_pass_29" VALUE="306"/>
+        <PARAMETER NAME="b_low_pass_30" VALUE="188"/>
+        <PARAMETER NAME="b_low_pass_31" VALUE="118"/>
+        <PARAMETER NAME="b_low_pass_32" VALUE="83"/>
+        <PARAMETER NAME="Component_Name" VALUE="system_fir_filter_wrapper_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="125000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="data_source_ADC_axis_red_pitaya_adc_0_adc_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_source_ADC_axis_red_pitaya_adc_0" PORT="adc_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="control_uP_control_reset_n_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="control_uP_control_reset_n" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="control_uP_control_enable_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="control_uP_control_enable" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="data_source_selector_data_in_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_source_selector_data_in" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="data_in_valid" SIGIS="undef" SIGNAME="data_source_selector_data_in_data_out_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_source_selector_data_in" PORT="data_out_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="procesamiento_fir_filter_wrapper_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="procesamiento_decimator_decimator_0" PORT="data_in"/>
+            <CONNECTION INSTANCE="procesamiento_decimator_linear_mean_0" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_out_valid" SIGIS="undef" SIGNAME="procesamiento_fir_filter_wrapper_0_data_out_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="procesamiento_decimator_decimator_0" PORT="data_in_valid"/>
+            <CONNECTION INSTANCE="procesamiento_decimator_linear_mean_0" PORT="data_in_valid"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

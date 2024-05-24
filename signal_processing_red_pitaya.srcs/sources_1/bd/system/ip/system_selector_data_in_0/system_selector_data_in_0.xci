@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "system_selector_data_in_0",
-    "cell_name": "decimator/selector_data_in1",
+    "cell_name": "procesamiento/decimator/selector_data_in1",
     "component_reference": "xilinx.com:module_ref:mux:1.0",
     "ip_revision": "1",
     "gen_directory": "../../../../../../signal_processing_red_pitaya.gen/sources_1/bd/system/ip/system_selector_data_in_0",

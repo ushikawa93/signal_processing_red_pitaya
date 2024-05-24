@@ -1,0 +1,117 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu May 23 21:19:40 2024
+# Process ID: 12164
+# Current directory: C:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11752 C:\Users\mati9\OneDrive\Documentos\signal_processing_red_pitaya\signal_processing_red_pitaya.xpr
+# Log file: C:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/vivado.log
+# Journal file: C:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya\vivado.jou
+# Running On: DESKTOP-4F847D8, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 2, Host memory: 4204 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.xpr
+open_bd_design {C:/Users/mati9/OneDrive/Documentos/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/bd/system/system.bd}
+update_compile_order -fileset sources_1
+startgroup
+make_bd_pins_external  [get_bd_pins control/uP_control/param_out_8_9/gpio_io_o]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins control/uP_control/param_out_8_9/gpio2_io_o]
+endgroup
+set_property name param_out_8 [get_bd_pins control/gpio_io_o_0]
+set_property name param_out_9 [get_bd_pins control/gpio2_io_o_0]
+delete_bd_objs [get_bd_nets control_gpio_io_o_0]
+delete_bd_objs [get_bd_nets control_gpio2_io_o_0] [get_bd_ports gpio2_io_o_0]
+delete_bd_objs [get_bd_ports gpio_io_o_0]
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets control_GPIO_0]
+delete_bd_objs [get_bd_intf_ports GPIO_0]
+delete_bd_objs [get_bd_intf_nets control/Conn1]
+delete_bd_objs [get_bd_intf_pins control/uP_control/GPIO_0]
+delete_bd_objs [get_bd_intf_pins control/GPIO_0]
+startgroup
+make_bd_pins_external  [get_bd_pins control/uP_control/finished/gpio_io_i]
+endgroup
+set_property name finished [get_bd_pins control/uP_control/gpio_io_i_0]
+set_property name finichsed [get_bd_pins control/gpio_io_i_0]
+set_property name finished [get_bd_pins control/finichsed]
+delete_bd_objs [get_bd_nets gpio_io_i_0_1] [get_bd_ports gpio_io_i_0]
+regenerate_bd_layout
+startgroup
+make_bd_pins_external  [get_bd_pins control/uP_control/param_in_0_1/gpio_io_i]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins control/uP_control/param_in_0_1/gpio2_io_i]
+endgroup
+set_property name param_in_0 [get_bd_pins control/gpio_io_i_0]
+set_property name param_in_1 [get_bd_pins control/gpio2_io_i_0]
+delete_bd_objs [get_bd_nets gpio_io_i_0_1] [get_bd_ports gpio_io_i_0]
+delete_bd_objs [get_bd_nets gpio2_io_i_0_1] [get_bd_ports gpio2_io_i_0]
+connect_bd_net [get_bd_pins control/param_out_0] [get_bd_pins decimator/sel] -boundary_type upper
+connect_bd_net [get_bd_pins decimator/decimate_value] [get_bd_pins control/param_out_1] -boundary_type upper
+connect_bd_net [get_bd_pins data_source/sel] [get_bd_pins control/param_out_2] -boundary_type upper
+group_bd_cells procesamiento [get_bd_cells decimator]
+connect_bd_net [get_bd_pins procesamiento/decimator/finish] [get_bd_pins control/finished] -boundary_type upper
+regenerate_bd_layout
+assign_bd_address
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+report_ip_status -name ip_status 
+set_property LOCK_UPGRADE 1 [get_bd_cells /data_source/DAC/axis_red_pitaya_dac_0]
+set_property LOCK_UPGRADE 1 [get_bd_cells /data_source/DAC/axis_constant_0]
+set_property LOCK_UPGRADE 1 [get_bd_cells /data_source/generador_sinusoidal/axis_constant_0]
+set_property LOCK_UPGRADE 1 [get_bd_cells /data_source/ADC/axis_red_pitaya_adc_0]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+connect_bd_net [get_bd_pins control/uP_control/param_out_8_9/s_axi_aclk] [get_bd_pins control/uP_control/param_out_6_7/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/param_in_0_1/s_axi_aclk] [get_bd_pins control/uP_control/param_out_8_9/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aclk] [get_bd_pins control/uP_control/param_out_0_1/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aclk] [get_bd_pins control/uP_control/param_out_2_3/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aclk] [get_bd_pins control/uP_control/param_out_4_5/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aclk] [get_bd_pins control/uP_control/param_out_6_7/s_axi_aclk]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_out_0_1/s_axi_aresetn]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_out_2_3/s_axi_aresetn]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_out_4_5/s_axi_aresetn]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_out_6_7/s_axi_aresetn]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_in_0_1/s_axi_aresetn]
+connect_bd_net [get_bd_pins control/uP_control/s_axi_aresetn] [get_bd_pins control/uP_control/param_out_8_9/s_axi_aresetn]
+report_ip_status -name ip_status 
+save_bd_design
+launch_runs synth_1 -jobs 2
+save_bd_design
+launch_runs synth_1 -jobs 2
+save_bd_design
+launch_runs synth_1 -jobs 2
+save_bd_design
+launch_runs synth_1 -jobs 2
+ungroup_bd_cells [get_bd_cells data_source]
+save_bd_design
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+group_bd_cells data_source [get_bd_cells selector_data_in] [get_bd_cells generador_sinusoidal] [get_bd_cells DAC] [get_bd_cells ADC]
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+set_property CONFIG.CLK_DOMAIN /data_source/DAC/clk_wiz_0_clk_out1 [get_bd_pins /data_source/DAC/axis_red_pitaya_dac_0/ddr_clk]
+save_bd_design
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+regenerate_bd_layout
+regenerate_bd_layout
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
