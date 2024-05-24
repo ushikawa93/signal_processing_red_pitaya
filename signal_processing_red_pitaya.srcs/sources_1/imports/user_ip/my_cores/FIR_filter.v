@@ -120,119 +120,30 @@ begin
 		
 		if(data_in_valid)
 		begin
+	
+		  x[0] <= data_in;
+		  for (i = 0; i< N; i = i+1)
+		  begin
+			x[i+1] <= x[i];					
+			y_reg[i] <= coef[i] * x[i];
+		  end
+		  y_reg[N] <= coef[N] * x[N];
 		
-		    x[0] <= data_in;
-            x[1] <= x[0];
-            x[2] <= x[1];
-            x[3] <= x[2];
-            x[4] <= x[3];
-            x[5] <= x[4];
-            x[6] <= x[5];
-            x[7] <= x[6];
-            x[8] <= x[7];
-            x[9] <= x[8];
-            x[10] <= x[9];
-            x[11] <= x[10];
-            x[12] <= x[11];
-            x[13] <= x[12];
-            x[14] <= x[13];
-            x[15] <= x[14];
-            x[16] <= x[15];
-            x[17] <= x[16];
-            x[18] <= x[17];
-            x[19] <= x[18];
-            x[20] <= x[19];
-            x[21] <= x[20];
-            x[22] <= x[21];
-            x[23] <= x[22];
-            x[24] <= x[23];
-            x[25] <= x[24];
-            x[26] <= x[25];
-            x[27] <= x[26];
-            x[28] <= x[27];
-            x[29] <= x[28];
-            x[30] <= x[29];
-            x[31] <= x[30];
-            x[32] <= x[31];
-
-            y_reg[0] <= coef[0] * x[0];
-            y_reg[1] <= coef[1] * x[1];
-            y_reg[2] <= coef[2] * x[2];
-            y_reg[3] <= coef[3] * x[3];
-            y_reg[4] <= coef[4] * x[4];
-            y_reg[5] <= coef[5] * x[5];
-            y_reg[6] <= coef[6] * x[6];
-            y_reg[7] <= coef[7] * x[7];
-            y_reg[8] <= coef[8] * x[8];
-            y_reg[9] <= coef[9] * x[9];
-            y_reg[10] <= coef[10] * x[10];
-            y_reg[11] <= coef[11] * x[11];
-            y_reg[12] <= coef[12] * x[12];
-            y_reg[13] <= coef[13] * x[13];
-            y_reg[14] <= coef[14] * x[14];
-            y_reg[15] <= coef[15] * x[15];
-            y_reg[16] <= coef[16] * x[16];
-            y_reg[17] <= coef[17] * x[17];
-            y_reg[18] <= coef[18] * x[18];
-            y_reg[19] <= coef[19] * x[19];
-            y_reg[20] <= coef[20] * x[20];
-            y_reg[21] <= coef[21] * x[21];
-            y_reg[22] <= coef[22] * x[22];
-            y_reg[23] <= coef[23] * x[23];
-            y_reg[24] <= coef[24] * x[24];
-            y_reg[25] <= coef[25] * x[25];
-            y_reg[26] <= coef[26] * x[26];
-            y_reg[27] <= coef[27] * x[27];
-            y_reg[28] <= coef[28] * x[28];
-            y_reg[29] <= coef[29] * x[29];
-            y_reg[30] <= coef[30] * x[30];
-            y_reg[31] <= coef[31] * x[31];
-            y_reg[32] <= coef[32] * x[32];
-        
-            y_0 <= y_reg[0] + y_reg[1] + y_reg[2] + y_reg[3] + y_reg[4];
-            y_1 <= y_reg[5] + y_reg[6] + y_reg[7] + y_reg[8] + y_reg[9];
-            y_2 <= y_reg[10] + y_reg[11] + y_reg[12] + y_reg[13] + y_reg[14];
-            y_3 <= y_reg[15] + y_reg[16] + y_reg[17] + y_reg[18] + y_reg[19];
-            y_4 <= y_reg[20] + y_reg[21] + y_reg[22] + y_reg[23] + y_reg[24];
-            y_5 <= y_reg[25] + y_reg[26] + y_reg[27] + y_reg[28] + y_reg[29];
-            y_6 <= y_reg[30] + y_reg[31] + y_reg[32];
+	      y_0 <= y_reg[0] + y_reg[1] + y_reg[2] + y_reg[3] + y_reg[4];
+          y_1 <= y_reg[5] + y_reg[6] + y_reg[7] + y_reg[8] + y_reg[9];
+          y_2 <= y_reg[10] + y_reg[11] + y_reg[12] + y_reg[13] + y_reg[14];
+          y_3 <= y_reg[15] + y_reg[16] + y_reg[17] + y_reg[18] + y_reg[19];
+          y_4 <= y_reg[20] + y_reg[21] + y_reg[22] + y_reg[23] + y_reg[24];
+          y_5 <= y_reg[25] + y_reg[26] + y_reg[27] + y_reg[28] + y_reg[29];
+          y_6 <= y_reg[30] + y_reg[31] + y_reg[32];
             
-            y <= y_0 + y_1 + y_2 + y_3 + y_4 +y_5 + y_6;
-
-/*
-			x[0] <= data_in;
-			x[1] <= x[0];
-			x[2] <= x[1];
-			x[3] <= x[2];
-			x[4] <= x[3];
-			
-			y_reg[0] <= coef[0] * x[0];
-			y_reg[1] <= coef[1] * x[1];
-			y_reg[2] <= coef[2] * x[2];
-			y_reg[3] <= coef[3] * x[3];
-			y_reg[4] <= coef[4] * x[4];
-			
-			y <= y_reg[0] + y_reg[1] + y_reg[2] + y_reg[3] + y_reg[4];
-		
-		*/
-		/*
-			for (i = 0; i< N; i = i+1)
-			begin
-				x[i+1] <= x[i];					
-				y_reg[i] <= coef[i] * x[i];
-			end
-			y_reg[N] <= coef[N] * x[N];
-		
-			y = y_reg[0] + y_reg[1] + y_reg[2] + y_reg[3] + y_reg[4] + y_reg[5] + y_reg[6] + y_reg[7] + 
-                y_reg[8] + y_reg[9] + y_reg[10] + y_reg[11] + y_reg[12] + y_reg[13] + y_reg[14] + y_reg[15] +
-                y_reg[16] + y_reg[17] + y_reg[18] + y_reg[19] + y_reg[20] + y_reg[21] + y_reg[22] + y_reg[23] +
-                y_reg[24] + y_reg[25] + y_reg[26] + y_reg[27] + y_reg[28] + y_reg[29] + y_reg[30] + y_reg[31] + y_reg[32];
-        */
-			data_valid_reg <= 1;
+          y <= y_0 + y_1 + y_2 + y_3 + y_4 +y_5 + y_6;
+        
+		  data_valid_reg <= 1;
 		
 		end
 		else
-			data_valid_reg <= 0;
+		  data_valid_reg <= 0;
 	end
 
 end

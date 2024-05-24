@@ -76,10 +76,10 @@ int main(int argc, char **argv)
 	// Seteo los parametros de la operacion a traves de funciones por prolijidad
 	
 	set_decimator_method(cfg,0);
-	set_decimator_value(cfg,1);
+	set_decimator_value(cfg,10);
 	set_sel_data_in(cfg,0);
 	set_frec_dac(cfg,250000);
-	set_frec_sen_interno(cfg,10000000);
+	set_frec_sen_interno(cfg,2500000);
 	
 
 	ResetFPGA(cfg);

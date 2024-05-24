@@ -1,5 +1,5 @@
 % Abre el archivo para lectura
-fid = fopen('resultados_adc_10M.dat', 'r');
+fid = fopen('resultados_adc_2500k.dat', 'r');
 
 % Lee la línea de encabezado y descártala
 header = fgetl(fid);

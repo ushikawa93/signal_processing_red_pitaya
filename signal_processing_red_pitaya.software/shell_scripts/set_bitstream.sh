@@ -2,7 +2,7 @@
 # Pequeño script para mandar el bitstream a la FPGA 
 # Uso -> copy_bitstream {archivo.bit} {red pitaya IP}
 
-name=${1:-signal_processing_fir_filter_pb.bit}
+name=${1:-signal_processing_fir_filter_pb_new.bit}
 ip=${2:-192.168.1.102}
 
 
