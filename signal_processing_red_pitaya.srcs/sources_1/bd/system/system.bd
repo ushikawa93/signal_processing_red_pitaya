@@ -7,8 +7,7 @@
       "name": "system",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "None",
-      "tool_version": "2022.2",
-      "validated": "true"
+      "tool_version": "2022.2"
     },
     "design_tree": {
       "util_ds_buf_1": "",
@@ -319,30 +318,10 @@
         "right": "0"
       },
       "dac_clk_o": {
-        "direction": "O",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "system_axis_red_pitaya_dac_0_0_dac_clk",
-            "value_src": "default_prop"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default_prop"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default_prop"
-          }
-        }
+        "direction": "O"
       },
       "dac_rst_o": {
-        "direction": "O",
-        "parameters": {
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default_prop"
-          }
-        }
+        "direction": "O"
       },
       "dac_sel_o": {
         "direction": "O"
@@ -368,40 +347,12 @@
       "daisy_p_o": {
         "direction": "O",
         "left": "1",
-        "right": "0",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "system_util_ds_buf_1_0_IBUF_OUT",
-            "value_src": "ip_prop"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "ip_prop"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "ip_prop"
-          }
-        }
+        "right": "0"
       },
       "daisy_n_o": {
         "direction": "O",
         "left": "1",
-        "right": "0",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "system_util_ds_buf_1_0_IBUF_OUT",
-            "value_src": "ip_prop"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "ip_prop"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "ip_prop"
-          }
-        }
+        "right": "0"
       },
       "daisy_p_i": {
         "direction": "I",
@@ -4371,7 +4322,7 @@
           "data_out_valid": {
             "direction": "O"
           },
-          "sel": {
+          "sel_decimate_method": {
             "direction": "I",
             "left": "31",
             "right": "0"
@@ -4781,7 +4732,7 @@
           },
           "control_param_out_0": {
             "ports": [
-              "sel",
+              "sel_decimate_method",
               "decimator/sel"
             ]
           },
@@ -4839,7 +4790,7 @@
       },
       "data_source": {
         "ports": {
-          "sel": {
+          "sel_data_source": {
             "direction": "I",
             "left": "31",
             "right": "0"
@@ -5810,7 +5761,7 @@
           },
           "sel_1": {
             "ports": [
-              "sel",
+              "sel_data_source",
               "selector_data_in/sel"
             ]
           },
@@ -5952,7 +5903,7 @@
       "control_param_out_0": {
         "ports": [
           "control/param_out_0",
-          "procesamiento/sel"
+          "procesamiento/sel_decimate_method"
         ]
       },
       "control_param_out_3": {
@@ -6000,7 +5951,7 @@
       "sel_1": {
         "ports": [
           "control/param_out_2",
-          "data_source/sel"
+          "data_source/sel_data_source"
         ]
       },
       "selector_data_in_data_out": {

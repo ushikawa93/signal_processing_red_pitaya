@@ -27,3 +27,7 @@ wait_on_run impl_1
 report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 200 -input_pins -routable_nets -name timing_3
 report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 200 -input_pins -routable_nets -name timing_1
 refresh_design
+open_bd_design {C:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/bd/system/system.bd}
+set_property NAME sel_decimate_method [get_bd_pins /procesamiento/sel]
+set_property NAME sel_data_source [get_bd_pins /data_source/sel]
+save_bd_design
