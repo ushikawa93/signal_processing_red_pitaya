@@ -125,15 +125,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/user_ip/my_cores/signal_split.v">
-        <FileInfo RelPath="signal_split.v">
-          <Attr Name="ImportPath" Val="$PPRDIR/../../02-lockin_red_pitaya/hardware/lockin.srcs/user_ip/my_cores/signal_split.v"/>
-          <Attr Name="ImportTime" Val="1682623500"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/user_ip/my_cores/FIR_filter.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -143,6 +134,15 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/user_ip/my_cores/fir_filter_wrapper.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/user_ip/my_cores/signal_split.v">
+        <FileInfo RelPath="signal_split.v">
+          <Attr Name="ImportPath" Val="$PPRDIR/../../02-lockin_red_pitaya/hardware/lockin.srcs/user_ip/my_cores/signal_split.v"/>
+          <Attr Name="ImportTime" Val="1682623500"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -617,9 +617,9 @@
         <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design">
           <Option Id="ResourceSharing">2</Option>
+          <Option Id="FsmExtraction">1</Option>
           <Option Id="KeepEquivalentRegisters">1</Option>
           <Option Id="Directive">7</Option>
-          <Option Id="FsmExtraction">1</Option>
           <Option Id="ShregMinSize">5</Option>
           <Option Id="NoCombineLuts">1</Option>
         </Step>

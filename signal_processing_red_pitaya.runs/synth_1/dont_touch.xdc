@@ -23,6 +23,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_driv
 # IP: bd/system/ip/system_drive_leds_0_0/system_drive_leds_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_drive_leds_0_0 || ORIG_REF_NAME==system_drive_leds_0_0} -quiet] -quiet
 
+# IP: bd/system/ip/system_xlconstant_0_0/system_xlconstant_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xlconstant_0_0 || ORIG_REF_NAME==system_xlconstant_0_0} -quiet] -quiet
+
 # IP: bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_processing_system7_0_0 || ORIG_REF_NAME==system_processing_system7_0_0} -quiet] -quiet
 
@@ -80,6 +83,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_sele
 # IP: bd/system/ip/system_linear_mean_0_0/system_linear_mean_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_linear_mean_0_0 || ORIG_REF_NAME==system_linear_mean_0_0} -quiet] -quiet
 
+# IP: bd/system/ip/system_fir_filter_wrapper_0_0/system_fir_filter_wrapper_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_fir_filter_wrapper_0_0 || ORIG_REF_NAME==system_fir_filter_wrapper_0_0} -quiet] -quiet
+
 # IP: bd/system/ip/system_mux_0_0/system_mux_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_mux_0_0 || ORIG_REF_NAME==system_mux_0_0} -quiet] -quiet
 
@@ -112,12 +118,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axis
 
 # IP: bd/system/ip/system_signal_split_0_0/system_signal_split_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_signal_split_0_0 || ORIG_REF_NAME==system_signal_split_0_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_xlconstant_0_0/system_xlconstant_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xlconstant_0_0 || ORIG_REF_NAME==system_xlconstant_0_0} -quiet] -quiet
-
-# IP: bd/system/ip/system_fir_filter_wrapper_0_0/system_fir_filter_wrapper_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_fir_filter_wrapper_0_0 || ORIG_REF_NAME==system_fir_filter_wrapper_0_0} -quiet] -quiet
 
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet

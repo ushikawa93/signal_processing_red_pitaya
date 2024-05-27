@@ -54,11 +54,11 @@ parameter N = 32;
 reg signed [15:0] coef [0:N];
 reg signed [13:0] x [0:N]; 
 reg signed [31:0] y_reg [0:N];
-integer i;
+integer i,j;
 reg data_valid_reg;
 
-reg signed [31:0] y,y_0,y_1,y_2,y_3,y_4,y_5,y_6;
-
+reg signed [31:0] y_0,y_1,y_2,y_3,y_4,y_5,y_6,y_7,y_8,y_9,y_10,y_11,y_12,y_13,y_14,y_15,y_16;
+reg signed [31:0] y,y_int_0,y_int_1,y_int_2,y_int_3,y_int_4,y_int_5;
 always @ (posedge clk)
 begin
 
@@ -128,16 +128,39 @@ begin
 			y_reg[i] <= coef[i] * x[i];
 		  end
 		  y_reg[N] <= coef[N] * x[N];
-		
-	      y_0 <= y_reg[0] + y_reg[1] + y_reg[2] + y_reg[3] + y_reg[4];
-          y_1 <= y_reg[5] + y_reg[6] + y_reg[7] + y_reg[8] + y_reg[9];
-          y_2 <= y_reg[10] + y_reg[11] + y_reg[12] + y_reg[13] + y_reg[14];
-          y_3 <= y_reg[15] + y_reg[16] + y_reg[17] + y_reg[18] + y_reg[19];
-          y_4 <= y_reg[20] + y_reg[21] + y_reg[22] + y_reg[23] + y_reg[24];
-          y_5 <= y_reg[25] + y_reg[26] + y_reg[27] + y_reg[28] + y_reg[29];
-          y_6 <= y_reg[30] + y_reg[31] + y_reg[32];
+		  
+	  
+		  y_0 <= y_reg[0] + y_reg[1];  
+          y_1 <= y_reg[2] + y_reg[3]; 
+          y_2 <= y_reg[4] + y_reg[5];          
+          y_3 <= y_reg[6] + y_reg[7];        
+                    
+          y_4 <= y_reg[8] + y_reg[9];
+          y_5 <= y_reg[10] + y_reg[11];
+          y_6 <= y_reg[12] + y_reg[13];
+          y_7 <= y_reg[14] + y_reg[15];
             
-          y <= y_0 + y_1 + y_2 + y_3 + y_4 +y_5 + y_6;
+          y_8 <= y_reg[16] + y_reg[17];
+          y_9 <= y_reg[18] + y_reg[19];  
+          y_10 <= y_reg[20] + y_reg[21];
+          y_11 <= y_reg[22] + y_reg[23];
+                
+          y_12 <= y_reg[24] + y_reg[25];  
+          y_13 <= y_reg[26] + y_reg[27];
+          y_14 <= y_reg[28] + y_reg[29];
+          y_15 <= y_reg[30] + y_reg[31];
+          y_16 <= y_reg[32];
+          
+          y_int_0 <= y_0 + y_1 + y_2 + y_3;
+          y_int_1 <= y_4 + y_5 + y_6 + y_7;
+          y_int_2 <= y_8 + y_9 + y_10 + y_11;
+          y_int_3 <= y_12 + y_13 + y_14 + y_15 + y_16;
+                    
+          
+          y_int_4 <= y_int_0 + y_int_1;          
+          y_int_5 <= y_int_2 + y_int_3;
+		           
+          y <= y_int_4 + y_int_5;
         
 		  data_valid_reg <= 1;
 		
