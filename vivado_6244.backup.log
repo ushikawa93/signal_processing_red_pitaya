@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Nov 15 13:24:33 2024
-# Process ID: 6716
+# Start of session at: Wed Nov 13 11:28:13 2024
+# Process ID: 6244
 # Current directory: C:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent128 C:\Users\MatiOliva\Documents\04-RedPitaya\signal_processing_red_pitaya\signal_processing_red_pitaya.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6356 C:\Users\MatiOliva\Documents\04-RedPitaya\signal_processing_red_pitaya\signal_processing_red_pitaya.xpr
 # Log file: C:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/vivado.log
 # Journal file: C:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya\vivado.jou
 # Running On: DESKTOP-BRUHM76, OS: Windows, CPU Frequency: 3912 MHz, CPU Physical cores: 2, Host memory: 17041 MB
@@ -67,7 +67,8 @@ If this directory should no longer be in your list of user repositories, go to t
 WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/MatiOliva/Documents/02-lockin_red_pitaya/hardware/lockin.srcs/lu_tables'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:24 . Memory (MB): peak = 1146.602 ; gain = 400.168
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:26 . Memory (MB): peak = 1144.680 ; gain = 376.715
+update_compile_order -fileset sources_1
 open_bd_design {C:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/bd/system/system.bd}
 Reading block design file <C:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/bd/system/system.bd>...
 Adding component instance block -- xilinx.com:ip:util_ds_buf:2.2 - util_ds_buf_1
@@ -109,4 +110,6 @@ Adding component instance block -- pavel-demin:user:axis_constant:1.0 - axis_con
 Adding component instance block -- pavel-demin:user:axis_red_pitaya_adc:1.0 - axis_red_pitaya_adc_0
 Adding component instance block -- xilinx.com:module_ref:signal_split:1.0 - signal_split_0
 Successfully read diagram <system> from block design file <C:/Users/MatiOliva/Documents/04-RedPitaya/signal_processing_red_pitaya/signal_processing_red_pitaya.srcs/sources_1/bd/system/system.bd>
-open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1222.477 ; gain = 57.191
+open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1223.488 ; gain = 59.414
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 17:48:39 2024...

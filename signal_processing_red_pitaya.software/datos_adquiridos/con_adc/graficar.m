@@ -19,3 +19,4 @@ title('Valores del ADC');
 xlabel('Muestras');
 ylabel('Valor del ADC');
 grid on;
+hold on;

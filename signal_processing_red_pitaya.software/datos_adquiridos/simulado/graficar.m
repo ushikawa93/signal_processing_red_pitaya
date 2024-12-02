@@ -1,5 +1,5 @@
 % Abre el archivo para lectura
-fid = fopen('resultados_adc.dat', 'r');
+fid = fopen('resultados_adc_8M.dat', 'r');
 
 % Lee la línea de encabezado y descártala
 header = fgetl(fid);
@@ -19,3 +19,4 @@ title('Valores del ADC');
 xlabel('Muestras');
 ylabel('Valor del ADC');
 grid on;
+hold on;

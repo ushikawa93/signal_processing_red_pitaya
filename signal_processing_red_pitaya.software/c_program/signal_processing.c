@@ -64,7 +64,7 @@ int main(int argc, char **argv)
     int fd;
     void *cfg;
     char *name = "/dev/mem";
-	
+
 	// Mapeo el espacio de memoria de la FPGA al puntero cfg
     if((fd = open(name, O_RDWR)) < 0)
     {
@@ -76,10 +76,10 @@ int main(int argc, char **argv)
 	// Seteo los parametros de la operacion a traves de funciones por prolijidad
 	
 	set_decimator_method(cfg,0);
-	set_decimator_value(cfg,1);
-	set_sel_data_in(cfg,0);
+	set_decimator_value(cfg,20);
+	set_sel_data_in(cfg,1);
 	set_frec_dac(cfg,250000);
-	set_frec_sen_interno(cfg,10000000);
+	set_frec_sen_interno(cfg,500000);
 	
 
 	ResetFPGA(cfg);
@@ -91,6 +91,7 @@ int main(int argc, char **argv)
 	while  ( getFinish(cfg) == 0 ) 	{}
 	
 	int32_t* datos =  leerFIFO(cfg,FIFO_1_ADDRESS);
+	
 	escribirArchivo_adc("resultados_adc.dat",datos);
 
 
