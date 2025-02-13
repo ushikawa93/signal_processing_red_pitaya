@@ -57,5 +57,12 @@ La frecuencia de la señal generada también es gestionada por el uP.
 
 Adicionalmente este módulo gestiona el DAC, al que envía una señal sinusoidal de fase configurable.
 
+### POSIBLE BUG:
+
+Por algún motivo Vivado cambia el CLOCK DOMAIN de un pin /data_source/DAC/axis_red_pitaya_dac_0/ddr_clk. 
+Aca pone la ruta relativa -> /DAC/clk_wiz_0_clk_out1 (ERRONEO)
+Esa hay que cambiarla a -> /data_source/DAC/clk_wiz_0_clk_out1 (CORRECTO)
+Para ello seleccionar el PIN meterse en CONFIG buscar CLOCK DOMAIN y modificarlo!
+
 ### Licencia
 Este proyecto cuenta con licencia conforme a los términos de la licencia MIT

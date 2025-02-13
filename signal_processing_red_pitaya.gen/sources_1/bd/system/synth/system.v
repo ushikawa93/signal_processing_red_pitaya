@@ -1,8 +1,8 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Mon May 27 13:18:37 2024
-//Host        : DESKTOP-BRUHM76 running 64-bit major release  (build 9200)
+//Date        : Thu Feb 13 17:07:17 2025
+//Host        : DESKTOP-4F847D8 running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
 //Purpose     : IP block netlist
@@ -761,7 +761,7 @@ module data_source_imp_KBXA35
     data_out_valid,
     phase_dac,
     phase_sen_interno,
-    sel);
+    sel_data_source);
   input aclken;
   output adc_clk;
   input adc_clk_n_i;
@@ -779,7 +779,7 @@ module data_source_imp_KBXA35
   output data_out_valid;
   input [31:0]phase_dac;
   input [31:0]phase_sen_interno;
-  input [31:0]sel;
+  input [31:0]sel_data_source;
 
   wire [31:0]ADC_M_AXIS_PORT1_tdata;
   wire ADC_M_AXIS_PORT1_tvalid;
@@ -819,7 +819,7 @@ module data_source_imp_KBXA35
   assign data_out[31:0] = selector_data_in_data_out;
   assign data_out_valid = selector_data_in_data_out_valid;
   assign fase_dds_compiler_1 = phase_dac[31:0];
-  assign sel_1 = sel[31:0];
+  assign sel_1 = sel_data_source[31:0];
   assign uP_control_Dout = aresetn;
   assign uP_control_Dout1 = aclken;
   ADC_imp_D1KUJL ADC
@@ -2233,7 +2233,7 @@ module procesamiento_imp_QIVR9Q
     enable,
     finish,
     reset_n,
-    sel);
+    sel_decimate_method);
   input clk_in;
   input [31:0]data_in;
   input data_in_valid;
@@ -2243,7 +2243,7 @@ module procesamiento_imp_QIVR9Q
   input enable;
   output finish;
   input reset_n;
-  input [31:0]sel;
+  input [31:0]sel_decimate_method;
 
   wire ADC_adc_clk;
   wire [31:0]axi_str_rxd_tdata_1;
@@ -2259,7 +2259,7 @@ module procesamiento_imp_QIVR9Q
   wire uP_control_Dout1;
 
   assign ADC_adc_clk = clk_in;
-  assign control_param_out_0 = sel[31:0];
+  assign control_param_out_0 = sel_decimate_method[31:0];
   assign data_out[31:0] = axi_str_rxd_tdata_1;
   assign data_out_valid = axi_str_rxd_tvalid1_1;
   assign decimate_value_1 = decimate_value[31:0];
@@ -2800,7 +2800,7 @@ module system
         .data_out_valid(selector_data_in_data_out_valid),
         .phase_dac(control_param_out_4),
         .phase_sen_interno(control_param_out_3),
-        .sel(sel_1));
+        .sel_data_source(sel_1));
   gpios_and_leds_imp_198WUFD gpios_and_leds
        (.exp_n_tri_io(exp_n_tri_io[7:0]),
         .exp_p_tri_io(exp_p_tri_io[7:0]),
@@ -2815,7 +2815,7 @@ module system
         .enable(uP_control_Dout1),
         .finish(finished_1),
         .reset_n(uP_control_Dout),
-        .sel(control_param_out_0));
+        .sel_decimate_method(control_param_out_0));
   system_util_ds_buf_1_0 util_ds_buf_1
        (.IBUF_DS_N(daisy_n_i_1),
         .IBUF_DS_P(daisy_p_i_1),

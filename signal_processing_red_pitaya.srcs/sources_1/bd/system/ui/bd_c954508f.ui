@@ -1,82 +1,82 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.41422",
-   "Default View_TopLeft":"473,399",
+   "Default View_TopLeft":"474,431",
    "ExpandedHierarchyInLayout":"",
    "PinnedPorts":"",
    "commentid":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port Vp_Vn -pg 1 -lvl 0 -x -170 -y 100 -defaultsOSRD
-preplace port Vaux0 -pg 1 -lvl 0 -x -170 -y 20 -defaultsOSRD
-preplace port Vaux1 -pg 1 -lvl 0 -x -170 -y 40 -defaultsOSRD
-preplace port Vaux9 -pg 1 -lvl 0 -x -170 -y 80 -defaultsOSRD
+preplace port Vp_Vn -pg 1 -lvl 0 -x -170 -y 120 -defaultsOSRD
+preplace port Vaux0 -pg 1 -lvl 0 -x -170 -y 0 -defaultsOSRD
+preplace port Vaux1 -pg 1 -lvl 0 -x -170 -y 30 -defaultsOSRD
+preplace port Vaux9 -pg 1 -lvl 0 -x -170 -y 90 -defaultsOSRD
 preplace port Vaux8 -pg 1 -lvl 0 -x -170 -y 60 -defaultsOSRD
-preplace port DDR -pg 1 -lvl 3 -x 1020 -y 70 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 3 -x 1020 -y 90 -defaultsOSRD
-preplace port gpio_rtl_0 -pg 1 -lvl 3 -x 1020 -y 40 -defaultsOSRD
-preplace port gpio_rtl_1 -pg 1 -lvl 3 -x 1020 -y 110 -defaultsOSRD
-preplace port port-id_adc_clk_p_i -pg 1 -lvl 0 -x -170 -y 580 -defaultsOSRD
-preplace port port-id_adc_clk_n_i -pg 1 -lvl 0 -x -170 -y 600 -defaultsOSRD
-preplace port port-id_adc_enc_p_o -pg 1 -lvl 3 -x 1020 -y 150 -defaultsOSRD
-preplace port port-id_adc_enc_n_o -pg 1 -lvl 3 -x 1020 -y 130 -defaultsOSRD
-preplace port port-id_adc_csn_o -pg 1 -lvl 3 -x 1020 -y 680 -defaultsOSRD
-preplace port port-id_dac_clk_o -pg 1 -lvl 3 -x 1020 -y 580 -defaultsOSRD
-preplace port port-id_dac_rst_o -pg 1 -lvl 3 -x 1020 -y 600 -defaultsOSRD
-preplace port port-id_dac_sel_o -pg 1 -lvl 3 -x 1020 -y 620 -defaultsOSRD
-preplace port port-id_dac_wrt_o -pg 1 -lvl 3 -x 1020 -y 640 -defaultsOSRD
-preplace portBus adc_dat_a_i -pg 1 -lvl 0 -x -170 -y 620 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 3 -x 1040 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 3 -x 1040 -y 90 -defaultsOSRD
+preplace port gpio_rtl_0 -pg 1 -lvl 3 -x 1040 -y 30 -defaultsOSRD
+preplace port gpio_rtl_1 -pg 1 -lvl 3 -x 1040 -y 120 -defaultsOSRD
+preplace port port-id_adc_clk_p_i -pg 1 -lvl 0 -x -170 -y 550 -defaultsOSRD
+preplace port port-id_adc_clk_n_i -pg 1 -lvl 0 -x -170 -y 580 -defaultsOSRD
+preplace port port-id_adc_enc_p_o -pg 1 -lvl 3 -x 1040 -y 180 -defaultsOSRD
+preplace port port-id_adc_enc_n_o -pg 1 -lvl 3 -x 1040 -y 150 -defaultsOSRD
+preplace port port-id_adc_csn_o -pg 1 -lvl 3 -x 1040 -y 680 -defaultsOSRD
+preplace port port-id_dac_clk_o -pg 1 -lvl 3 -x 1040 -y 530 -defaultsOSRD
+preplace port port-id_dac_rst_o -pg 1 -lvl 3 -x 1040 -y 560 -defaultsOSRD
+preplace port port-id_dac_sel_o -pg 1 -lvl 3 -x 1040 -y 590 -defaultsOSRD
+preplace port port-id_dac_wrt_o -pg 1 -lvl 3 -x 1040 -y 620 -defaultsOSRD
+preplace portBus adc_dat_a_i -pg 1 -lvl 0 -x -170 -y 610 -defaultsOSRD
 preplace portBus adc_dat_b_i -pg 1 -lvl 0 -x -170 -y 640 -defaultsOSRD
-preplace portBus dac_dat_o -pg 1 -lvl 3 -x 1020 -y 660 -defaultsOSRD
-preplace portBus dac_pwm_o -pg 1 -lvl 3 -x 1020 -y 20 -defaultsOSRD
-preplace portBus exp_p_tri_io -pg 1 -lvl 3 -x 1020 -y 930 -defaultsOSRD
-preplace portBus exp_n_tri_io -pg 1 -lvl 3 -x 1020 -y 910 -defaultsOSRD
-preplace portBus daisy_p_o -pg 1 -lvl 3 -x 1020 -y 790 -defaultsOSRD
-preplace portBus daisy_n_o -pg 1 -lvl 3 -x 1020 -y 810 -defaultsOSRD
-preplace portBus daisy_p_i -pg 1 -lvl 0 -x -170 -y 790 -defaultsOSRD
+preplace portBus dac_dat_o -pg 1 -lvl 3 -x 1040 -y 650 -defaultsOSRD
+preplace portBus dac_pwm_o -pg 1 -lvl 3 -x 1040 -y 0 -defaultsOSRD
+preplace portBus exp_p_tri_io -pg 1 -lvl 3 -x 1040 -y 920 -defaultsOSRD
+preplace portBus exp_n_tri_io -pg 1 -lvl 3 -x 1040 -y 890 -defaultsOSRD
+preplace portBus daisy_p_o -pg 1 -lvl 3 -x 1040 -y 780 -defaultsOSRD
+preplace portBus daisy_n_o -pg 1 -lvl 3 -x 1040 -y 810 -defaultsOSRD
+preplace portBus daisy_p_i -pg 1 -lvl 0 -x -170 -y 780 -defaultsOSRD
 preplace portBus daisy_n_i -pg 1 -lvl 0 -x -170 -y 810 -defaultsOSRD
-preplace portBus led_o -pg 1 -lvl 3 -x 1020 -y 950 -defaultsOSRD
+preplace portBus led_o -pg 1 -lvl 3 -x 1040 -y 950 -defaultsOSRD
 preplace inst util_ds_buf_1 -pg 1 -lvl 1 -x 230 -y 780 -defaultsOSRD
 preplace inst util_ds_buf_2 -pg 1 -lvl 2 -x 769 -y 808 -defaultsOSRD
 preplace inst gpios_and_leds -pg 1 -lvl 2 -x 769 -y 950 -defaultsOSRD
 preplace inst control -pg 1 -lvl 2 -x 769 -y 200 -defaultsOSRD
 preplace inst procesamiento -pg 1 -lvl 1 -x 230 -y 180 -defaultsOSRD
 preplace inst data_source -pg 1 -lvl 2 -x 769 -y 600 -defaultsOSRD
-preplace netloc ADC_adc_clk 1 0 3 -140 290 410 450 940
+preplace netloc ADC_adc_clk 1 0 3 -100 60 440 10 980
 preplace netloc ADC_adc_csn_o 1 2 1 NJ 680
-preplace netloc Net 1 2 1 960J 930n
-preplace netloc Net2 1 2 1 940J 910n
-preplace netloc adc_clk_n_i_1 1 0 2 NJ 600 NJ
-preplace netloc adc_clk_p_i_1 1 0 2 NJ 580 NJ
-preplace netloc adc_dat_a_i_1 1 0 2 NJ 620 NJ
+preplace netloc Net 1 2 1 990J 920n
+preplace netloc Net2 1 2 1 950J 890n
+preplace netloc adc_clk_n_i_1 1 0 2 NJ 580 390J
+preplace netloc adc_clk_p_i_1 1 0 2 NJ 550 400J
+preplace netloc adc_dat_a_i_1 1 0 2 NJ 610 400J
 preplace netloc adc_dat_b_i_1 1 0 2 NJ 640 NJ
-preplace netloc axi_str_rxd_tdata_1 1 1 1 440 160n
-preplace netloc axi_str_rxd_tvalid1_1 1 1 1 410 150n
-preplace netloc axis_red_pitaya_dac_0_dac_clk 1 2 1 NJ 580
-preplace netloc axis_red_pitaya_dac_0_dac_dat 1 2 1 NJ 660
-preplace netloc axis_red_pitaya_dac_0_dac_rst 1 2 1 NJ 600
-preplace netloc axis_red_pitaya_dac_0_dac_sel 1 2 1 NJ 620
-preplace netloc axis_red_pitaya_dac_0_dac_wrt 1 2 1 NJ 640
-preplace netloc control_param_out_0 1 0 3 -150 0 NJ 0 970
-preplace netloc control_param_out_3 1 1 2 440 440 970
-preplace netloc control_param_out_4 1 1 2 420 420 930
-preplace netloc daisy_n_i_1 1 0 1 -120J 800n
-preplace netloc daisy_p_i_1 1 0 1 -130J 780n
-preplace netloc decimate_value_1 1 0 3 -100 10 NJ 10 930
-preplace netloc drive_leds_0_signal_out 1 2 1 970J 950n
-preplace netloc finished_1 1 1 1 390 200n
-preplace netloc sel_1 1 1 2 430 410 940
-preplace netloc selector_data_in_data_out 1 0 3 -100 430 NJ 430 930
-preplace netloc selector_data_in_data_out_valid 1 0 3 -110 400 NJ 400 950
-preplace netloc uP_control_Dout 1 0 3 -130 300 400 380 960
-preplace netloc uP_control_Dout1 1 0 3 -120 310 390 390 950
-preplace netloc util_ds_buf_1_IBUF_OUT 1 1 1 420 780n
-preplace netloc util_ds_buf_2_OBUF_DS_N 1 2 1 960J 810n
-preplace netloc util_ds_buf_2_OBUF_DS_P 1 2 1 940J 790n
-preplace netloc processing_system7_0_DDR 1 2 1 NJ 70
+preplace netloc axi_str_rxd_tdata_1 1 1 1 430 160n
+preplace netloc axi_str_rxd_tvalid1_1 1 1 1 400 150n
+preplace netloc axis_red_pitaya_dac_0_dac_clk 1 2 1 990J 530n
+preplace netloc axis_red_pitaya_dac_0_dac_dat 1 2 1 970J 650n
+preplace netloc axis_red_pitaya_dac_0_dac_rst 1 2 1 1000J 560n
+preplace netloc axis_red_pitaya_dac_0_dac_sel 1 2 1 1010J 590n
+preplace netloc axis_red_pitaya_dac_0_dac_wrt 1 2 1 1020J 620n
+preplace netloc control_param_out_0 1 0 3 -150 -10 NJ -10 970
+preplace netloc control_param_out_3 1 1 2 440 440 960
+preplace netloc control_param_out_4 1 1 2 420 410 930
+preplace netloc daisy_n_i_1 1 0 1 -130J 800n
+preplace netloc daisy_p_i_1 1 0 1 NJ 780
+preplace netloc decimate_value_1 1 0 3 -130 0 NJ 0 960
+preplace netloc drive_leds_0_signal_out 1 2 1 1020J 950n
+preplace netloc finished_1 1 1 1 430 200n
+preplace netloc sel_1 1 1 2 430 420 970
+preplace netloc selector_data_in_data_out 1 0 3 -110 430 NJ 430 930
+preplace netloc selector_data_in_data_out_valid 1 0 3 -100 390 NJ 390 950
+preplace netloc uP_control_Dout 1 0 3 -120 290 400 380 950
+preplace netloc uP_control_Dout1 1 0 3 -140 400 410 400 940
+preplace netloc util_ds_buf_1_IBUF_OUT 1 1 1 410 780n
+preplace netloc util_ds_buf_2_OBUF_DS_N 1 2 1 1010J 810n
+preplace netloc util_ds_buf_2_OBUF_DS_P 1 2 1 960J 780n
+preplace netloc processing_system7_0_DDR 1 2 1 990J 60n
 preplace netloc processing_system7_0_FIXED_IO 1 2 1 NJ 90
-levelinfo -pg 1 -170 230 769 1020
-pagesize -pg 1 -db -bbox -sgen -340 -10 1180 2570
+levelinfo -pg 1 -170 230 769 1040
+pagesize -pg 1 -db -bbox -sgen -330 -20 1200 2570
 "
 }
 {

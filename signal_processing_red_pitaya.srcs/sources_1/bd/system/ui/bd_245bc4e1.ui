@@ -1,0 +1,56 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.16629",
+   "Default View_TopLeft":"198,273",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_data_out_valid -pg 1 -lvl 3 -x 1630 -y 180 -defaultsOSRD
+preplace port port-id_adc_clk -pg 1 -lvl 3 -x 1630 -y 280 -defaultsOSRD
+preplace port port-id_aresetn -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
+preplace port port-id_aclken -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port port-id_dac_clk_o -pg 1 -lvl 3 -x 1630 -y 340 -defaultsOSRD
+preplace port port-id_dac_rst_o -pg 1 -lvl 3 -x 1630 -y 370 -defaultsOSRD
+preplace port port-id_dac_sel_o -pg 1 -lvl 3 -x 1630 -y 400 -defaultsOSRD
+preplace port port-id_dac_wrt_o -pg 1 -lvl 3 -x 1630 -y 430 -defaultsOSRD
+preplace port port-id_adc_csn_o -pg 1 -lvl 3 -x 1630 -y 310 -defaultsOSRD
+preplace port port-id_adc_clk_p_i -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace port port-id_adc_clk_n_i -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace portBus sel_data_source -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace portBus data_out -pg 1 -lvl 3 -x 1630 -y 150 -defaultsOSRD
+preplace portBus dac_dat_o -pg 1 -lvl 3 -x 1630 -y 460 -defaultsOSRD
+preplace portBus adc_dat_a_i -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace portBus adc_dat_b_i -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace portBus phase_sen_interno -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace portBus phase_dac -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace inst selector_data_in -pg 1 -lvl 2 -x 630 -y 180 -defaultsOSRD
+preplace inst generador_sinusoidal -pg 1 -lvl 1 -x 170 -y 350 -defaultsOSRD
+preplace inst DAC -pg 1 -lvl 2 -x 630 -y 422 -defaultsOSRD
+preplace inst ADC -pg 1 -lvl 1 -x 170 -y 100 -defaultsOSRD
+preplace netloc ADC_M_AXIS_PORT1_tdata 1 1 1 350 50n
+preplace netloc ADC_M_AXIS_PORT1_tvalid 1 1 1 320 70n
+preplace netloc ADC_adc_clk 1 0 3 30 250 310 300 790J
+preplace netloc ADC_adc_csn_o 1 1 2 300J 60 800J
+preplace netloc adc_clk_n_i_1 1 0 1 20J 70n
+preplace netloc adc_clk_p_i_1 1 0 1 30J 40n
+preplace netloc adc_dat_a_i_1 1 0 1 30J 100n
+preplace netloc adc_dat_b_i_1 1 0 1 NJ 130
+preplace netloc axis_red_pitaya_dac_0_dac_clk 1 2 1 790J 340n
+preplace netloc axis_red_pitaya_dac_0_dac_dat 1 2 1 800J 460n
+preplace netloc axis_red_pitaya_dac_0_dac_rst 1 2 1 800J 370n
+preplace netloc axis_red_pitaya_dac_0_dac_sel 1 2 1 810J 400n
+preplace netloc axis_red_pitaya_dac_0_dac_wrt 1 2 1 820J 430n
+preplace netloc cfg_data_1 1 0 1 20J 320n
+preplace netloc fase_dds_compiler_1 1 0 2 NJ 260 300J
+preplace netloc referencias_Dout1 1 1 1 330 120n
+preplace netloc referencias_m_axis_data_tvalid 1 1 1 340 140n
+preplace netloc sel_1 1 0 2 NJ 200 NJ
+preplace netloc selector_data_in_data_out 1 2 1 790J 150n
+preplace netloc selector_data_in_data_out_valid 1 2 1 NJ 180
+preplace netloc uP_control_Dout 1 0 2 20 452 NJ
+preplace netloc uP_control_Dout1 1 0 2 30 432 NJ
+levelinfo -pg 1 0 170 630 1630
+pagesize -pg 1 -db -bbox -sgen -210 -10 1780 710
+"
+}
+
