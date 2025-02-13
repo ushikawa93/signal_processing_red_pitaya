@@ -1,0 +1,12 @@
+# Archivos temporales de compilación
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.webtalk/
+*.xil/
+*.wdb
+*.wcfg
+*.tmp
+*.prj
+*.pb
